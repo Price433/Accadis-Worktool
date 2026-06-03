@@ -1,0 +1,436 @@
+{
+  "fach": "eal",
+  "titel": "EAL 101 — Wirtschaftsrecht inkl. Steuern (Oehlrich)",
+  "stand": "2026-06-03",
+  "dokumente": [
+    {
+      "id": "d_eal0522",
+      "name": "Mitschrift 22.05.2026",
+      "woerter": 0,
+      "seiten": 1,
+      "hochgeladenVon": "David",
+      "text": "Europarecht: Verordnung = direkt anwendbar, Richtlinie = Umsetzung nötig. Instanzenzug ZPO: bis 10.000 EUR Amtsgericht, darüber Landgericht; Berufung nächste Instanz, Revision immer BGH. Verfassungsbeschwerde kostenlos, nur bei Grundrechtsverletzung + ausgeschöpftem Rechtsweg. Anwaltszwang: nicht AG, nicht BVerfG; ja LG/OLG/BGH."
+    },
+    {
+      "id": "d_eal0602",
+      "name": "Mitschrift 02.06.2026",
+      "woerter": 0,
+      "seiten": 1,
+      "hochgeladenVon": "David",
+      "text": "AGG: §1 Ziel, §3 unmittelbare vs. mittelbare Benachteiligung, §22 Beweislastumkehr, §15 Entschädigung. BGB-Aufbau: AT vor die Klammer; Schuldrecht AT (Angebot+Annahme), BT Vertragstypen. Werkvertrag §631 (Erfolg) vs. Dienstvertrag §611 (Tätigkeit). Willenserklärung Definition. Realakt keine WE. Verjährung 3 Jahre §195."
+    },
+    {
+      "id": "d_eal0603",
+      "name": "Mitschrift 03.06.2026",
+      "woerter": 0,
+      "seiten": 1,
+      "hochgeladenVon": "David",
+      "text": "WE 3 Bestandteile: Handlungswille, Erklärungsbewusstsein, Geschäftswille (fehlt → anfechtbar). Schweigen keine WE (Ausnahmen). §242 Treu und Glauben, widersprüchliches Verhalten. Auslegung §133 (wirklicher Wille) + §157 (Verträge); natürliche vs. normative Auslegung (Empfängerhorizont)."
+    }
+  ],
+  "karten": [
+    {
+      "id": "k1",
+      "frage": "Unterschied Verordnung vs. Richtlinie (EU)?",
+      "antwort": "Verordnung = unmittelbar/direkt anwendbares Recht in allen Mitgliedstaaten. Richtlinie = muss erst in nationales Recht umgesetzt werden.",
+      "thema": "Europarecht",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Mitschrift 22.05.2026",
+        "seite": "Europarecht",
+        "original": "Verordnung ist direkt anwendbares Recht, eine Richtlinie muss erst noch umgesetzt werden. (Vorlesung 22.05., Europarecht)"
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k2",
+      "frage": "Instanzenzug ZPO: Welche Eingangsinstanz ab welchem Streitwert?",
+      "antwort": "Bis 10.000 € → Amtsgericht; über 10.000 € → Landgericht. Berufung = nächsthöhere Instanz, Revision = immer BGH.",
+      "thema": "Gerichtsaufbau",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Mitschrift 22.05.2026",
+        "seite": "Instanzenzug",
+        "original": "Da halt die Sachen die 10.000-Euro-Grenze. Ich fange entweder an unter 10.000 Euro beim Amtsgericht oder über 10.000 Euro bis Millionen/Milliarden beim Landgericht. In Berufung gehe ich in die nächste höhere Instanz und in die Revision gehe ich immer zum Bundesgerichtshof."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k3",
+      "frage": "Voraussetzungen einer Verfassungsbeschwerde?",
+      "antwort": "(1) Verletzung in eigenen Grundrechten UND (2) Rechtsweg ausgeschöpft. Kostenlos. Kein Anwaltszwang.",
+      "thema": "Verfassungsrecht",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Mitschrift 22.05.2026",
+        "seite": "BVerfG",
+        "original": "Verfassungsbeschwerde ist kostenlos und ich kann aber nur Verfassungsbeschwerde einlegen, wenn ich in meinen Grundrechten verletzt bin als Bürger/Unternehmer und wenn ich den Rechtsweg ausgeschöpft habe."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k4",
+      "frage": "Wo gilt Anwaltszwang, wo nicht?",
+      "antwort": "KEIN Zwang: Amtsgericht + Bundesverfassungsgericht. Zwang: Landgericht, OLG, BGH.",
+      "thema": "Gerichtsaufbau",
+      "relevanz": 2,
+      "quelle": {
+        "doc": "Mitschrift 22.05.2026",
+        "seite": "Anwaltszwang",
+        "original": "Anwaltszwang, außer beim Amtsgericht, bei allen Gerichten Anwaltszwang, also Landgericht, Oberlandesgericht, BGH; beim Bundesverfassungsgericht habe ich auch keinen Anwaltszwang."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k5",
+      "frage": "AGG §3: unmittelbare vs. mittelbare Benachteiligung?",
+      "antwort": "Unmittelbar = direkt an ein Merkmal geknüpft (offensichtlich). Mittelbar = neutrale Regel wirkt faktisch benachteiligend (das Praxisproblem).",
+      "thema": "AGG",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Mitschrift 02.06.2026",
+        "seite": "§ 3 AGG",
+        "original": "§ 3 mit dem Begriff der unmittelbaren Benachteiligung und der mittelbaren Benachteiligung. Die unmittelbare Benachteiligung ist kein Problem … das große Problem ist eher die mittelbare Benachteiligung. (Vorlesung 02.06., AGG)"
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k6",
+      "frage": "Was besagt die Beweislastumkehr im AGG (§ 22)?",
+      "antwort": "Der Benachteiligte muss nur Indizien vortragen; dann muss der Arbeitgeber beweisen, dass KEINE Diskriminierung vorlag.",
+      "thema": "AGG",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Mitschrift 02.06.2026",
+        "seite": "§ 22 AGG",
+        "original": "§ 22, die Beweislastumkehr, dass eben nicht der [Betroffene] nachweisen müsste, dass er wegen der Hautfarbe benachteiligt wurde …"
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k7",
+      "frage": "Werkvertrag (§ 631) vs. Dienstvertrag (§ 611) — entscheidender Unterschied?",
+      "antwort": "Werkvertrag: der ERFOLG/das Werk ist geschuldet (z.B. Reparatur). Dienstvertrag: nur die TÄTIGKEIT (z.B. Arzt, Beratung).",
+      "thema": "Schuldrecht BT",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Mitschrift 02.06.2026",
+        "seite": "§§ 611/631",
+        "original": "Beim Dienstvertrag geht es darum, dass man eine Dienstleistung erbringt … das ist der Dienstvertrag § 611. Und daneben gibt es den Werkvertrag, bei dem wird der Erfolg geschuldet. Das ist ganz wichtig, dass ich beim Werkvertrag den Erfolg schulde."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k8",
+      "frage": "Die 3 Bestandteile einer Willenserklärung?",
+      "antwort": "Handlungswille, Erklärungsbewusstsein, Geschäftswille. Fehlt nur der Geschäftswille → WE wirksam, aber ANFECHTBAR (Irrtum).",
+      "thema": "Willenserklärung",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Mitschrift 03.06.2026",
+        "seite": "WE-Bestandteile",
+        "original": "Die Willenserklärung setzt sich zusammen aus dem Willen und der Erklärung … Handlungswille, Erklärungsbewusstsein, Geschäftswille. (Vorlesung 03.06.) Verkäuferin verschreibt sich beim Kaufpreis – Handlungswille ja, Erklärungswille ja, aber kein Geschäftswille."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k9",
+      "frage": "Ist Schweigen eine Willenserklärung?",
+      "antwort": "Grundsatz: NEIN. Ausnahmen nur gesetzlich/vertraglich (z.B. kaufmännisches Bestätigungsschreiben). Konkludent ≠ Schweigen.",
+      "thema": "Willenserklärung",
+      "relevanz": 2,
+      "quelle": {
+        "doc": "Mitschrift 03.06.2026",
+        "seite": "Schweigen",
+        "original": "Stillschweigend ist nicht dasselbe wie Schweigen … Ausnahmsweise kann Schweigen eine Willenserklärung sein. Aber grundsätzlich ist die Regel, ist Schweigen keine Willenserklärung."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k10",
+      "frage": "Welche §§ zitiert man bei der Auslegung einer Willenserklärung?",
+      "antwort": "§ 133 (wirklicher Wille) UND § 157 (Verträge, Treu & Glauben + Verkehrssitte). NICHT mit Gesetzesauslegung verwechseln (systematisch/teleologisch/historisch).",
+      "thema": "Auslegung",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Mitschrift 03.06.2026",
+        "seite": "§§ 133/157",
+        "original": "Die Vorschriften, die dazu wichtig sind, sind insbesondere Paragraph 133 und 157. 242 wird auch mit dazu genommen, aber was Sie in der Klausur zitieren müssen, ist 133 und 157."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k11",
+      "frage": "Natürliche vs. normative Auslegung?",
+      "antwort": "Natürlich (§133): wirklicher Wille, z.B. Testament. Normativ (§§133/157): wie ein objektiver Empfänger nach Treu & Glauben verstehen durfte/musste — der Praxis-Normalfall.",
+      "thema": "Auslegung",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Mitschrift 03.06.2026",
+        "seite": "natürlich/normativ",
+        "original": "Entweder ich habe die natürliche Auslegung, der wirkliche Wille des Erklärenden spielt die Rolle … oder ich habe die normative Auslegung: der Wille des Erklärenden aus Sicht des Empfängerhorizonts. … In der Praxis ist die normative Auslegung bedeutsamer."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k12",
+      "frage": "§ 242 BGB — wozu dient er (Beispiel)?",
+      "antwort": "Treu und Glauben; Korrektiv gegen widersprüchliches Verhalten (venire contra factum proprium). Bsp.: Nachbar/Baum an der Grenze — vorher beim Pflanzen geholfen → Recht gesperrt.",
+      "thema": "Schuldrecht AT",
+      "relevanz": 2,
+      "quelle": {
+        "doc": "Mitschrift 03.06.2026",
+        "seite": "§ 242",
+        "original": "Hier korrigiert man das Ergebnis dadurch, dass man sagt, ich habe ein widersprüchliches Verhalten. Ich habe vorher ihm sogar geholfen, den Baum zu pflanzen. (§ 242, Vorlesung 03.06.)"
+      },
+      "up": 0,
+      "down": 0
+    }
+  ],
+  "themen": [
+    {
+      "id": "t1",
+      "thema": "Europarecht",
+      "punkte": [
+        "Verordnung = direkt anwendbar",
+        "Richtlinie = Umsetzung nötig"
+      ],
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Mitschrift 22.05.2026",
+        "seite": "Europarecht",
+        "original": "Verordnung = direkt anwendbares Recht; Richtlinie muss erst umgesetzt werden."
+      }
+    },
+    {
+      "id": "t2",
+      "thema": "Gerichtsaufbau & Instanzen",
+      "punkte": [
+        "AG ≤10.000 € / LG >10.000 €",
+        "Berufung → nächste Instanz",
+        "Revision → immer BGH",
+        "Anwaltszwang außer AG & BVerfG"
+      ],
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Mitschrift 22.05.2026",
+        "seite": "Instanzenzug",
+        "original": "Unter/über 10.000 € → Amts-/Landgericht; Berufung nächste Instanz; Revision immer BGH; Anwaltszwang außer AG & BVerfG."
+      }
+    },
+    {
+      "id": "t3",
+      "thema": "AGG",
+      "punkte": [
+        "§1 Ziel",
+        "§3 unmittelbar vs. mittelbar",
+        "§22 Beweislastumkehr",
+        "§15 Entschädigung"
+      ],
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Mitschrift 02.06.2026",
+        "seite": "AGG",
+        "original": "§1 Ziel, §3 unmittelbar/mittelbar, §22 Beweislastumkehr, §15 Entschädigung."
+      }
+    },
+    {
+      "id": "t4",
+      "thema": "Vertragstypen",
+      "punkte": [
+        "Werkvertrag §631 = Erfolg",
+        "Dienstvertrag §611 = Tätigkeit",
+        "Arzt = Dienst, Schönheits-OP kann Werk sein"
+      ],
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Mitschrift 02.06.2026",
+        "seite": "§§ 611/631",
+        "original": "Dienstvertrag §611 = Dienstleistung; Werkvertrag §631 = Erfolg geschuldet."
+      }
+    },
+    {
+      "id": "t5",
+      "thema": "Willenserklärung & Auslegung",
+      "punkte": [
+        "3 Bestandteile (Handlungs-, Erklärungs-, Geschäftswille)",
+        "Schweigen ≠ WE",
+        "Auslegung §§133/157",
+        "natürlich vs. normativ"
+      ],
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Mitschrift 03.06.2026",
+        "seite": "WE/Auslegung",
+        "original": "WE = Wille + Erklärung; Schweigen grundsätzlich keine WE; Auslegung §§133/157, natürlich vs. normativ."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "frage": "Welche EU-Rechtsform ist OHNE nationale Umsetzung direkt anwendbar?",
+      "optionen": [
+        "Richtlinie",
+        "Verordnung",
+        "Empfehlung",
+        "Beschluss des Bundestags"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "Die Verordnung gilt unmittelbar; die Richtlinie muss erst umgesetzt werden.",
+      "quelle": {
+        "doc": "Mitschrift 22.05.2026",
+        "seite": "Europarecht",
+        "original": "Verordnung ist direkt anwendbares Recht, Richtlinie muss erst umgesetzt werden."
+      }
+    },
+    {
+      "id": "q2",
+      "frage": "Streitwert 25.000 € — welche Eingangsinstanz?",
+      "optionen": [
+        "Amtsgericht",
+        "Landgericht",
+        "BGH",
+        "BVerfG"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "Über 10.000 € → Landgericht.",
+      "quelle": {
+        "doc": "Mitschrift 22.05.2026",
+        "seite": "Instanzenzug",
+        "original": "Über 10.000 Euro bis Millionen/Milliarden beim Landgericht."
+      }
+    },
+    {
+      "id": "q3",
+      "frage": "Wo gilt KEIN Anwaltszwang?",
+      "optionen": [
+        "Landgericht",
+        "OLG",
+        "Amtsgericht",
+        "BGH"
+      ],
+      "loesungIndex": 2,
+      "erklaerung": "Beim Amtsgericht (und beim BVerfG) besteht kein Anwaltszwang.",
+      "quelle": {
+        "doc": "Mitschrift 22.05.2026",
+        "seite": "Anwaltszwang",
+        "original": "Anwaltszwang außer beim Amtsgericht; beim Bundesverfassungsgericht auch kein Anwaltszwang."
+      }
+    },
+    {
+      "id": "q4",
+      "frage": "Was bewirkt § 22 AGG?",
+      "optionen": [
+        "Schadensersatz ausgeschlossen",
+        "Beweislastumkehr zugunsten des Benachteiligten",
+        "Frist von 1 Jahr",
+        "Nur für Beamte"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "Indizien genügen; der Arbeitgeber muss das Gegenteil beweisen.",
+      "quelle": {
+        "doc": "Mitschrift 02.06.2026",
+        "seite": "§ 22 AGG",
+        "original": "§ 22, die Beweislastumkehr — nicht der Betroffene muss die Benachteiligung nachweisen."
+      }
+    },
+    {
+      "id": "q5",
+      "frage": "Beim Werkvertrag (§ 631) ist geschuldet …",
+      "optionen": [
+        "nur die Tätigkeit",
+        "der Erfolg / das Werk",
+        "ein Mietzins",
+        "die bloße Beratung"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "Werkvertrag = Erfolg geschuldet; Dienstvertrag (§611) = nur Tätigkeit.",
+      "quelle": {
+        "doc": "Mitschrift 02.06.2026",
+        "seite": "§§ 611/631",
+        "original": "Beim Werkvertrag wird der Erfolg geschuldet (§ 631); Dienstvertrag § 611 nur die Dienstleistung."
+      }
+    },
+    {
+      "id": "q6",
+      "frage": "Welche §§ zitiert man zur Auslegung einer Willenserklärung?",
+      "optionen": [
+        "§§ 133, 157",
+        "§§ 433, 437",
+        "§§ 611, 631",
+        "§§ 194, 195"
+      ],
+      "loesungIndex": 0,
+      "erklaerung": "§133 (Wille) + §157 (Verträge, Treu & Glauben).",
+      "quelle": {
+        "doc": "Mitschrift 03.06.2026",
+        "seite": "§§ 133/157",
+        "original": "Was Sie in der Klausur zitieren müssen, ist 133 und 157."
+      }
+    }
+  ],
+  "klausurfragen": [
+    {
+      "id": "f1",
+      "frage": "Erläutern Sie den Unterschied zwischen Verordnung und Richtlinie der EU.",
+      "warum": "Von Oehlrich explizit als Klausurthema genannt (18.05.) + im Recap 22.05. wiederholt.",
+      "quelle": {
+        "doc": "Mitschrift 22.05.2026",
+        "seite": "Europarecht",
+        "original": "Verordnung = direkt anwendbar, Richtlinie = Umsetzung nötig. (Oehlrich: Klausurthema)"
+      }
+    },
+    {
+      "id": "f2",
+      "frage": "Skizzieren Sie den Instanzenzug (Berufung/Revision) im Zivilprozess.",
+      "warum": "Explizit als Klausurthema genannt; mehrfach behandelt.",
+      "quelle": {
+        "doc": "Mitschrift 22.05.2026",
+        "seite": "Instanzenzug",
+        "original": "Berufung → nächste Instanz, Revision → immer BGH. (Klausurthema)"
+      }
+    },
+    {
+      "id": "f3",
+      "frage": "Was ist eine Verfassungsbeschwerde und wann ist sie zulässig?",
+      "warum": "Von Oehlrich als Klausurthema (BVerfG) genannt.",
+      "quelle": {
+        "doc": "Mitschrift 22.05.2026",
+        "seite": "BVerfG",
+        "original": "Verfassungsbeschwerde: kostenlos, nur bei Grundrechtsverletzung + ausgeschöpftem Rechtsweg."
+      }
+    },
+    {
+      "id": "f4",
+      "frage": "Grenzen Sie Werkvertrag und Dienstvertrag ab (mit Beispiel).",
+      "warum": "Ausführlich behandelt; klassische BGB-Klausurfrage mit Beispielen (Arzt/Schönheits-OP).",
+      "quelle": {
+        "doc": "Mitschrift 02.06.2026",
+        "seite": "§§ 611/631",
+        "original": "Werkvertrag = Erfolg (§631) vs. Dienstvertrag = Tätigkeit (§611); Arzt=Dienst, Schönheits-OP kann Werk sein."
+      }
+    },
+    {
+      "id": "f5",
+      "frage": "Definieren Sie die Willenserklärung und grenzen Sie natürliche von normativer Auslegung ab.",
+      "warum": "Kernthema der letzten zwei Sitzungen; mit Testament-Beispiel betont.",
+      "quelle": {
+        "doc": "Mitschrift 03.06.2026",
+        "seite": "WE/Auslegung",
+        "original": "WE = Wille + Erklärung; natürliche (§133) vs. normative (§§133/157) Auslegung; Testament → wirklicher Wille."
+      }
+    }
+  ]
+}

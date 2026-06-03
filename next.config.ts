@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // pdf-parse/pdfjs nicht bündeln (sonst bricht der pdf.worker-Pfad unter Turbopack)
+  serverExternalPackages: ["pdf-parse"],
 };
 
 export default nextConfig;

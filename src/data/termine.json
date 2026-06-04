@@ -1,0 +1,10 @@
+[
+  { "datum": "2026-06-11", "titel": "Blue Ocean Strategy — Präsentation", "typ": "praesentation", "fach": "MAN 201", "fachId": "man" },
+  { "datum": "2026-06-12", "titel": "Business Model Canvas — Abgabe (Meilenstein 1)", "typ": "abgabe", "fach": "FUS 202", "fachId": "fus" },
+  { "datum": "2026-06-18", "titel": "Chindogu — Präsentation (5 Min, ohne PowerPoint)", "typ": "praesentation", "fach": "MAN 201", "fachId": "man" },
+  { "datum": "2026-06-30", "titel": "Englisch-Test", "typ": "klausur", "fach": "ENG 201", "fachId": "eng" },
+  { "datum": "2026-07-09", "titel": "E-Business Analysis — Präsentation", "typ": "praesentation", "fach": "MAN 201", "fachId": "man" },
+  { "datum": "2026-07-16", "titel": "Letzte Vorlesung & Exam-Prep", "typ": "info", "fach": "MAN 201", "fachId": "man" },
+  { "datum": "2026-07-20", "titel": "Final Exam (60 P, 120 Min) — Termin ca.", "typ": "klausur", "fach": "MAN 201", "fachId": "man" },
+  { "datum": "2026-07-31", "titel": "Reflexionspapier — Abgabe (Turnitin, 2.500–3.000 W)", "typ": "abgabe", "fach": "FUS 202", "fachId": "fus" }
+]

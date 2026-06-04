@@ -5,12 +5,24 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   ChevronLeft, FileText, Upload, RefreshCw, ThumbsUp, ThumbsDown, Pencil, Trash2,
-  Quote, ChevronDown, Layers, AlignLeft, ListChecks, Sparkles, Check,
+  Quote, ChevronDown, Layers, AlignLeft, ListChecks, Sparkles, Check, Brain, Play, CalendarClock,
 } from "lucide-react";
 import Tilt from "@/components/Tilt";
+import Lernmodus from "@/components/Lernmodus";
+import { STRATEGIE, lernplan } from "@/lib/lernen";
+import termine from "@/data/termine.json";
 import type { StudySet, Karte, ThemaBlock, QuizFrage, KlausurFrage, Quelle } from "@/lib/types";
 
 type Tab = "karten" | "themen" | "quiz" | "klausur";
+
+function naechsteKlausurTage(fachId: string): number | null {
+  const heute = new Date(); heute.setHours(0, 0, 0, 0);
+  const k = (termine as { datum: string; typ: string; fachId: string }[])
+    .filter((t) => t.fachId === fachId && t.typ === "klausur")
+    .map((t) => Math.round((new Date(t.datum + "T00:00:00").getTime() - heute.getTime()) / 86400000))
+    .filter((d) => d >= 0).sort((a, b) => a - b);
+  return k.length ? k[0] : null;
+}
 
 export default function SubjectPage() {
   const fach = decodeURIComponent(useParams().id as string);
@@ -18,6 +30,7 @@ export default function SubjectPage() {
   const [tab, setTab] = useState<Tab>("karten");
   const [busy, setBusy] = useState("");
   const [von, setVon] = useState("");
+  const [lernen, setLernen] = useState(false);
 
   async function load() {
     const r = await fetch(`/api/studyset?fach=${encodeURIComponent(fach)}`);
@@ -47,6 +60,9 @@ export default function SubjectPage() {
   }
 
   if (!set) return <div className="flex min-h-screen items-center justify-center t-caption">Lädt …</div>;
+
+  const tage = naechsteKlausurTage(set.fach);
+  const plan = lernplan(tage, set.karten.length);
 
   const tabs: [Tab, string, number, React.ReactNode][] = [
     ["karten", "Karteikarten", set.karten.length, <Layers key="a" size={15} />],
@@ -88,6 +104,33 @@ export default function SubjectPage() {
           </section>
         </Tilt>
 
+        {/* Strategie & Plan */}
+        <Tilt max={3}>
+          <section className="card card-pad mt-5" style={{ background: "var(--accent-soft)", borderColor: "color-mix(in srgb, var(--accent) 25%, transparent)" }}>
+            <div className="flex flex-wrap items-start gap-4">
+              <div className="flex-1 min-w-[60%]">
+                <div className="t-eyebrow mb-1.5 flex items-center gap-1.5" style={{ color: "var(--accent-ink)" }}><Brain size={13} /> Lernstrategie</div>
+                <p className="t-headline" style={{ color: "var(--accent-ink)" }}>{plan.headline}</p>
+                <p className="t-body t-secondary mt-1.5 text-[0.92rem]">{plan.hinweis}</p>
+                <p className="t-caption mt-2 flex items-center gap-1.5">
+                  <CalendarClock size={12} /> {tage === null ? "Kein fixer Klausurtermin" : `Klausur in ${tage} Tagen`}
+                  &nbsp;·&nbsp; Empfehlung: ~{plan.proTag} Karten/Tag
+                </p>
+              </div>
+              <button onClick={() => setLernen(true)} className="btn btn-primary"><Play size={16} /> Lernmodus starten</button>
+            </div>
+            <div className="mt-4 grid gap-2 sm:grid-cols-2">
+              {STRATEGIE.prinzipien.map((p) => (
+                <div key={p.name} className="rounded-xl px-3 py-2" style={{ background: "var(--surface)", border: "1px solid var(--line)" }}>
+                  <div className="t-headline" style={{ fontSize: "0.9rem" }}>{p.name} <span className="t-caption">· {p.kurz}</span></div>
+                  <div className="t-caption mt-0.5">{p.text}</div>
+                </div>
+              ))}
+            </div>
+            <p className="t-caption mt-2.5">Evidenzbasiert · {STRATEGIE.quelle}</p>
+          </section>
+        </Tilt>
+
         {/* Segmented Control */}
         <nav className="seg mt-7">
           {tabs.map(([t, label, n, icon]) => (
@@ -111,6 +154,8 @@ export default function SubjectPage() {
           {tab === "klausur" && set.klausurfragen.map((f, i) => <Anim key={f.id} i={i}><Tilt max={5}><KlausurCard f={f} /></Tilt></Anim>)}
         </div>
       </main>
+
+      {lernen && <Lernmodus fach={set.fach} karten={set.karten} onClose={() => setLernen(false)} />}
     </>
   );
 }

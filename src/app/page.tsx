@@ -3,8 +3,9 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
-import { Radar, ArrowUpRight, BookOpen, ScanLine } from "lucide-react";
+import { Radar, ArrowUpRight, BookOpen, ScanLine, CalendarClock } from "lucide-react";
 import Tilt from "@/components/Tilt";
+import Timeline from "@/components/Timeline";
 
 const Hero3D = dynamic(() => import("@/components/Hero3D"), { ssr: false });
 
@@ -82,8 +83,15 @@ export default function Home() {
         </div>
       </section>
 
-      <main className="mx-auto max-w-5xl px-6 pb-28 pt-6">
-        <h2 className="t-eyebrow mb-4 flex items-center gap-2"><BookOpen size={14} /> Fächer</h2>
+      <main className="mx-auto max-w-5xl px-6 pb-28 pt-10">
+        {/* Zeitstrahl */}
+        <motion.section initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.15 }}
+          className="mb-12">
+          <h2 className="t-eyebrow mb-4 flex items-center gap-2"><CalendarClock size={14} /> Anstehende Termine</h2>
+          <div className="card card-pad"><Timeline /></div>
+        </motion.section>
+
+        <h2 className="t-eyebrow mb-4 flex items-center gap-2"><BookOpen size={14} /> Fächer — auswählen &amp; loslernen</h2>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {faecher.map((f, i) => (
             <motion.div key={f.fach} initial={{ opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }}

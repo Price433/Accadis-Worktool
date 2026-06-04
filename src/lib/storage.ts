@@ -29,8 +29,9 @@ export async function listFaecher(): Promise<{ fach: string; titel: string }[]> 
   }
   const out: { fach: string; titel: string }[] = [];
   for (const id of ids) {
+    if (id === "termine") continue; // keine Fach-Datei
     const s = await loadSet(id);
-    if (s) out.push({ fach: id, titel: s.titel });
+    if (s && s.titel && Array.isArray(s.karten)) out.push({ fach: id, titel: s.titel });
   }
   return out.sort((a, b) => a.fach.localeCompare(b.fach));
 }

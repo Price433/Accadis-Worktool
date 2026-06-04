@@ -1,0 +1,401 @@
+{
+  "fach": "sus",
+  "titel": "SUS 101 — Sustainability Management (Ratz)",
+  "stand": "2026-06-04",
+  "dokumente": [
+    {
+      "id": "d_sus27",
+      "name": "Vorlesung 27.05.2026",
+      "woerter": 0,
+      "seiten": 1,
+      "hochgeladenVon": "David",
+      "text": "Nachhaltigkeitsberichterstattung, Greenwashing, EmpCo-Richtlinie, European Green Deal, CSRD/ESRS, doppelte Wesentlichkeit, EU-Taxonomie, KPIs/Benchmarking, Decathlon."
+    },
+    {
+      "id": "d_susb",
+      "name": "Brundtland-Bericht",
+      "woerter": 0,
+      "seiten": 1,
+      "hochgeladenVon": "David",
+      "text": "Our Common Future — Definition nachhaltiger Entwicklung."
+    }
+  ],
+  "karten": [
+    {
+      "id": "k1",
+      "frage": "Was reguliert die EmpCo-Richtlinie (EU) 2024/825?",
+      "antwort": "Schützt Verbraucher vor irreführenden Umweltaussagen (B2C). Vage Claims wie 'klimaneutral' nur auf Kompensations-Basis sind unzulässig; Siegel nur wenn staatlich/zertifiziert. Gilt verbindlich ab 27.09.2026 (UWG-Umsetzung Dez. 2025).",
+      "thema": "Greenwashing",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "EmpCo",
+        "original": "Empowering Consumers Directive 2024/825 — gegen Greenwashing, 'klimaneutral' per Offsetting unzulässig, gilt ab 27.09.2026."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k2",
+      "frage": "Klimaneutralität vs. echte Null (net zero)?",
+      "antwort": "Klimaneutralität erlaubt Kompensation (Zertifikate, Aufforstung). Net Zero = keinerlei Emissionen. EmpCo verbietet 'klimaneutral'-Claims, die nur auf Offsetting beruhen.",
+      "thema": "Green Deal",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "Klimaneutralität",
+        "original": "Klimaneutralität darf kompensiert werden (Zertifikate); net zero = keine Emissionen."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k3",
+      "frage": "Was ist das Ziel des European Green Deal?",
+      "antwort": "EU bis 2050 erster klimaneutraler Kontinent, 'niemanden zurücklassen'. Zwischenziel 2030: −55 % Emissionen (Fit for 55).",
+      "thema": "Green Deal",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "Green Deal",
+        "original": "European Green Deal: 2050 klimaneutral, 2030 minus 55 Prozent (Fit for 55), niemanden zurücklassen."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k4",
+      "frage": "Was ist die doppelte Wesentlichkeitsanalyse (double materiality)?",
+      "antwort": "Eingangspunkt jedes Nachhaltigkeitsberichts: (a) wie wirken Nachhaltigkeitsthemen auf das Unternehmen UND (b) wie wirkt das Unternehmen auf Umwelt/Gesellschaft.",
+      "thema": "CSRD",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "doppelte Wesentlichkeit",
+        "original": "Doppelte Wesentlichkeit: Wirkung der Themen aufs Unternehmen UND Wirkung des Unternehmens auf Umwelt/Soziales."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k5",
+      "frage": "Wofür stehen die drei ESRS-Dimensionen?",
+      "antwort": "E = Environment (Umwelt), S = Social (Soziales), G = Governance. Standards der CSRD-Berichterstattung.",
+      "thema": "CSRD",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "ESRS",
+        "original": "ESRS = E (Umwelt), S (Soziales), G (Governance)."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k6",
+      "frage": "Was bewirkt die EU-Taxonomie?",
+      "antwort": "Sie definiert als Richtlinie, welche Technologien/Aktivitäten als nachhaltig gelten und lenkt damit Kapitalflüsse — Investoren/Kapitalmarkt dürfen gezielt dort investieren.",
+      "thema": "Regulatorik",
+      "relevanz": 2,
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "Taxonomie",
+        "original": "EU-Taxonomie: definiert, in welche Technologien Investoren und der Kapitalmarkt investieren dürfen."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k7",
+      "frage": "Warum reichen KPIs ohne Benchmarking nicht?",
+      "antwort": "Eine Kennzahl ist erst valide im Vergleich zur jeweiligen Branche/Industrie. Ohne Branchen-Benchmark fehlt die Aussagekraft.",
+      "thema": "Messung",
+      "relevanz": 2,
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "KPIs",
+        "original": "KPIs brauchen Benchmarking zur jeweiligen Branche, sonst nicht valide."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k8",
+      "frage": "Was ist Greenwashing?",
+      "antwort": "Etwas erscheint nachhaltig, ist es aber nicht — nur 'den Anschein machen'. EmpCo + CSRD sollen das per Transparenz und belegbaren Claims unterbinden.",
+      "thema": "Greenwashing",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "Greenwashing",
+        "original": "Greenwashing = nur den Anschein von Nachhaltigkeit erwecken."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k9",
+      "frage": "Wie definiert der Brundtland-Bericht nachhaltige Entwicklung?",
+      "antwort": "Entwicklung, die die Bedürfnisse der Gegenwart deckt, ohne die Fähigkeit künftiger Generationen zu gefährden, ihre eigenen Bedürfnisse zu decken.",
+      "thema": "Grundlagen",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Brundtland-Bericht",
+        "seite": "Our Common Future",
+        "original": "Nachhaltige Entwicklung: Bedürfnisse der Gegenwart decken, ohne die der künftigen Generationen zu gefährden."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k10",
+      "frage": "Decathlon-Beispiel: was zeigt die 'Meisterwerkstatt'?",
+      "antwort": "Reparatur aller Sportartikel → Kreislaufwirtschaft + neues Geschäftsmodell + Resilienz. Nachhaltigkeit als gelebter Service, nicht als Label auf der Verpackung.",
+      "thema": "Praxis",
+      "relevanz": 1,
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "Decathlon",
+        "original": "Decathlon Meisterwerkstatt repariert alle Sportartikel — Kreislaufwirtschaft als neues Geschäftsmodell."
+      },
+      "up": 0,
+      "down": 0
+    }
+  ],
+  "themen": [
+    {
+      "id": "t1",
+      "thema": "Greenwashing & EmpCo",
+      "punkte": [
+        "EmpCo 2024/825, B2C, ab 27.09.2026",
+        "vage Claims verboten",
+        "'klimaneutral' per Offsetting unzulässig",
+        "Siegel nur staatlich/zertifiziert"
+      ],
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "EmpCo",
+        "original": "EmpCo gegen Greenwashing."
+      }
+    },
+    {
+      "id": "t2",
+      "thema": "European Green Deal",
+      "punkte": [
+        "2050 klimaneutral",
+        "2030 minus 55 % (Fit for 55)",
+        "Klimaneutralität ≠ net zero",
+        "niemanden zurücklassen"
+      ],
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "Green Deal",
+        "original": "Green Deal Ziele."
+      }
+    },
+    {
+      "id": "t3",
+      "thema": "CSRD / ESRS",
+      "punkte": [
+        "doppelte Wesentlichkeit als Einstieg",
+        "ESRS E/S/G",
+        "VSME für KMU",
+        "Omnibus-Vereinfachung"
+      ],
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "CSRD",
+        "original": "CSRD + ESRS + doppelte Wesentlichkeit."
+      }
+    },
+    {
+      "id": "t4",
+      "thema": "EU-Taxonomie & KPIs",
+      "punkte": [
+        "Taxonomie lenkt Kapital",
+        "KPIs nur mit Branchen-Benchmark valide",
+        "Regulatorik als KPI-Quelle"
+      ],
+      "relevanz": 2,
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "Taxonomie",
+        "original": "Taxonomie + KPIs."
+      }
+    },
+    {
+      "id": "t5",
+      "thema": "Grundlagen Nachhaltigkeit",
+      "punkte": [
+        "Brundtland-Definition",
+        "3 Dimensionen E/S/G",
+        "Kreislaufwirtschaft (Decathlon)"
+      ],
+      "relevanz": 2,
+      "quelle": {
+        "doc": "Brundtland-Bericht",
+        "seite": "Our Common Future",
+        "original": "Brundtland + Dimensionen."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "frage": "Ab wann gilt die EmpCo-Richtlinie verbindlich?",
+      "optionen": [
+        "sofort 2024",
+        "27.09.2026",
+        "2030",
+        "gar nicht"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "Umsetzung dt. UWG Dez. 2025, Anwendung ab 27.09.2026.",
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "EmpCo",
+        "original": "verbindliche Anwendung ab 27.09.2026."
+      }
+    },
+    {
+      "id": "q2",
+      "frage": "Klimaneutralität bedeutet …",
+      "optionen": [
+        "keinerlei Emissionen",
+        "Emissionen dürfen kompensiert werden",
+        "nur erneuerbare Energie",
+        "CO2-frei produziert"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "Im Gegensatz zu net zero erlaubt Klimaneutralität Kompensation.",
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "Klimaneutralität",
+        "original": "Klimaneutralität erlaubt Kompensation."
+      }
+    },
+    {
+      "id": "q3",
+      "frage": "Das Zwischenziel des Green Deal für 2030 ist …",
+      "optionen": [
+        "−30 %",
+        "−40 %",
+        "−55 %",
+        "−70 %"
+      ],
+      "loesungIndex": 2,
+      "erklaerung": "Fit for 55.",
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "Green Deal",
+        "original": "2030: minus 55 Prozent."
+      }
+    },
+    {
+      "id": "q4",
+      "frage": "Wofür steht das 'G' in ESRS?",
+      "optionen": [
+        "Green",
+        "Governance",
+        "Growth",
+        "Global"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "E/S/G.",
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "ESRS",
+        "original": "G = Governance."
+      }
+    },
+    {
+      "id": "q5",
+      "frage": "Die doppelte Wesentlichkeit betrachtet …",
+      "optionen": [
+        "nur finanzielle Risiken",
+        "nur Umweltwirkung",
+        "Wirkung auf das Unternehmen UND des Unternehmens auf Umwelt/Soziales",
+        "nur regulatorische Pflichten"
+      ],
+      "loesungIndex": 2,
+      "erklaerung": "Inside-out + outside-in.",
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "doppelte Wesentlichkeit",
+        "original": "beide Richtungen."
+      }
+    },
+    {
+      "id": "q6",
+      "frage": "Die EU-Taxonomie …",
+      "optionen": [
+        "verbietet Werbung",
+        "lenkt Kapital in nachhaltige Aktivitäten",
+        "ist freiwillig",
+        "ersetzt die CSRD"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "Definiert nachhaltige Aktivitäten.",
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "Taxonomie",
+        "original": "lenkt Investitionen."
+      }
+    }
+  ],
+  "klausurfragen": [
+    {
+      "id": "f1",
+      "frage": "Was regelt die EmpCo-Richtlinie und welche Aussagen werden unzulässig?",
+      "warum": "Aktuelles Kernthema, ausführlich besprochen.",
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "EmpCo",
+        "original": "EmpCo gegen Greenwashing."
+      }
+    },
+    {
+      "id": "f2",
+      "frage": "Erläutern Sie den European Green Deal und den Unterschied Klimaneutralität vs. net zero.",
+      "warum": "Zentral, klar betont.",
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "Green Deal",
+        "original": "Green Deal + Klimaneutralität."
+      }
+    },
+    {
+      "id": "f3",
+      "frage": "Beschreiben Sie die doppelte Wesentlichkeitsanalyse und die ESRS-Dimensionen.",
+      "warum": "CSRD-Kern, Einstieg jedes Berichts.",
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "CSRD",
+        "original": "doppelte Wesentlichkeit + ESRS."
+      }
+    },
+    {
+      "id": "f4",
+      "frage": "Wie definiert der Brundtland-Bericht nachhaltige Entwicklung?",
+      "warum": "Grundlagen-Definition, Pflichtlektüre.",
+      "quelle": {
+        "doc": "Brundtland-Bericht",
+        "seite": "Our Common Future",
+        "original": "Brundtland-Definition."
+      }
+    },
+    {
+      "id": "f5",
+      "frage": "Warum sind KPIs nur mit Branchen-Benchmark aussagekräftig?",
+      "warum": "Messung/Reporting, im Unterricht betont.",
+      "quelle": {
+        "doc": "Vorlesung 27.05.2026",
+        "seite": "KPIs",
+        "original": "KPIs + Benchmarking."
+      }
+    }
+  ]
+}

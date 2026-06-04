@@ -1,0 +1,398 @@
+{
+  "fach": "kuf",
+  "titel": "FIN 204 — Kapitalmarktorientierte Unternehmensführung (Oehlrich)",
+  "stand": "2026-06-04",
+  "dokumente": [
+    {
+      "id": "d_kuf22",
+      "name": "Vorlesung 22.05.2026",
+      "woerter": 0,
+      "seiten": 1,
+      "hochgeladenVon": "David",
+      "text": "Trade-off-Theorie der Kapitalstruktur, Modigliani-Miller, Tax Shield, Insolvenzkosten, optimaler Verschuldungsgrad; Beispiele Lufthansa, Telekom, VW."
+    },
+    {
+      "id": "d_kufo",
+      "name": "Oehlrich Kapitel 2 (S. 65)",
+      "woerter": 0,
+      "seiten": 1,
+      "hochgeladenVon": "David",
+      "text": "Trade-off-Theorie: Anleihen, Unternehmenswert, Insolvenzkosten, Verschuldung, Steuersatz."
+    }
+  ],
+  "karten": [
+    {
+      "id": "k1",
+      "frage": "Was besagt die Trade-off-Theorie der Kapitalstruktur?",
+      "antwort": "Der optimale Verschuldungsgrad liegt dort, wo der Steuervorteil des Fremdkapitals (Tax Shield) gegen die steigenden Insolvenz-/Financial-Distress-Kosten abgewogen ist.",
+      "thema": "Trade-off",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Oehlrich Kapitel 2 (S. 65)",
+        "seite": "S. 65",
+        "original": "Trade-off-Theorie: Abwägung zwischen Steuervorteil der Verschuldung und Insolvenzkosten — optimaler Verschuldungsgrad."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k2",
+      "frage": "Was ist das Tax Shield?",
+      "antwort": "Fremdkapitalzinsen sind steuerlich absetzbar → sie mindern den zu versteuernden Gewinn. Dadurch steigt mit Verschuldung der Unternehmenswert (bei Steuern).",
+      "thema": "Trade-off",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 22.05.2026",
+        "seite": "Tax Shield",
+        "original": "Zinsen auf Fremdkapital sind steuerlich absetzbar — das Tax Shield erhöht den Unternehmenswert."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k3",
+      "frage": "Was sagt das Modigliani-Miller-Theorem (ohne Steuern)?",
+      "antwort": "In einem perfekten Markt OHNE Steuern ist die Kapitalstruktur irrelevant — der Unternehmenswert hängt nicht vom Verschuldungsgrad ab.",
+      "thema": "Modigliani-Miller",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Oehlrich Kapitel 2 (S. 65)",
+        "seite": "MM",
+        "original": "Modigliani-Miller: ohne Steuern ist die Kapitalstruktur für den Unternehmenswert irrelevant."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k4",
+      "frage": "Wie ändert sich MM MIT Steuern?",
+      "antwort": "Mit Steuern wird Fremdkapital vorteilhaft (Tax Shield) → theoretisch wäre maximale Verschuldung optimal. Erst die Insolvenzkosten der Trade-off-Theorie begrenzen das.",
+      "thema": "Modigliani-Miller",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 22.05.2026",
+        "seite": "MM Steuern",
+        "original": "Mit Steuern lohnt sich Verschuldung wegen des Tax Shields — begrenzt durch Insolvenzkosten."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k5",
+      "frage": "Was sind Insolvenz-/Financial-Distress-Kosten?",
+      "antwort": "Direkte (Anwälte, Verfahren) und indirekte Kosten (verlorene Kunden/Lieferanten, schlechtere Konditionen), die mit steigender Verschuldung wahrscheinlicher und teurer werden.",
+      "thema": "Trade-off",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Oehlrich Kapitel 2 (S. 65)",
+        "seite": "Insolvenzkosten",
+        "original": "Mit steigender Verschuldung steigen die erwarteten Insolvenzkosten — direkt und indirekt."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k6",
+      "frage": "Wie misst man den Verschuldungsgrad praktisch?",
+      "antwort": "Häufig Net Debt / EBITDA. Beispiele: Lufthansa ~1,8×, Telekom ~2,64×, VW mit ~450 Mrd € Verbindlichkeiten.",
+      "thema": "Kennzahlen",
+      "relevanz": 2,
+      "quelle": {
+        "doc": "Vorlesung 22.05.2026",
+        "seite": "Verschuldungsgrad",
+        "original": "Net Debt zu EBITDA: Lufthansa 1,8-fach, Telekom 2,64-fach, VW rund 450 Milliarden Verbindlichkeiten."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k7",
+      "frage": "Warum hat Lufthansa hohe Insolvenzkosten trotz moderater Kennzahl?",
+      "antwort": "Zyklisches Geschäft, hohe Fixkosten, krisenanfällig (z.B. Corona) → im Distress drohen große indirekte Kosten. Daher trotz ~1,8× vorsichtige Verschuldung sinnvoll.",
+      "thema": "Anwendung",
+      "relevanz": 2,
+      "quelle": {
+        "doc": "Vorlesung 22.05.2026",
+        "seite": "Lufthansa",
+        "original": "Lufthansa: hohe Insolvenzkosten wegen zyklischem, fixkostenintensivem Geschäft."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k8",
+      "frage": "Warum kann Telekom höher verschuldet sein?",
+      "antwort": "Stabile, planbare Cashflows (Infrastruktur/Abos) → niedrige Insolvenzkosten → höherer optimaler Verschuldungsgrad (~2,64×) ist tragbar.",
+      "thema": "Anwendung",
+      "relevanz": 2,
+      "quelle": {
+        "doc": "Vorlesung 22.05.2026",
+        "seite": "Telekom",
+        "original": "Telekom: stabile Cashflows, niedrige Insolvenzkosten, höhere Verschuldung tragbar."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k9",
+      "frage": "Marktwert EK / FK — warum Marktwerte statt Buchwerte?",
+      "antwort": "Für die Kapitalstruktur zählen Marktwerte des Eigen- und Fremdkapitals, weil sie den tatsächlichen ökonomischen Wert und das Risiko widerspiegeln, nicht historische Bilanzwerte.",
+      "thema": "Kennzahlen",
+      "relevanz": 2,
+      "quelle": {
+        "doc": "Oehlrich Kapitel 2 (S. 65)",
+        "seite": "Marktwert",
+        "original": "Relevant sind Marktwert des Eigenkapitals und des Fremdkapitals."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k10",
+      "frage": "Rolle des Steuersatzes in der Trade-off-Theorie?",
+      "antwort": "Je höher der Unternehmenssteuersatz, desto wertvoller das Tax Shield → desto höher der optimale Verschuldungsgrad (bei sonst gleichen Insolvenzkosten).",
+      "thema": "Trade-off",
+      "relevanz": 2,
+      "quelle": {
+        "doc": "Oehlrich Kapitel 2 (S. 65)",
+        "seite": "Steuersatz",
+        "original": "Höherer Steuersatz = wertvolleres Tax Shield = höhere optimale Verschuldung."
+      },
+      "up": 0,
+      "down": 0
+    }
+  ],
+  "themen": [
+    {
+      "id": "t1",
+      "thema": "Trade-off-Theorie",
+      "punkte": [
+        "Tax Shield vs. Insolvenzkosten",
+        "optimaler Verschuldungsgrad",
+        "Steuersatz erhöht Tax-Shield-Wert"
+      ],
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Oehlrich Kapitel 2 (S. 65)",
+        "seite": "S. 65",
+        "original": "Abwägung Tax Shield / Insolvenzkosten."
+      }
+    },
+    {
+      "id": "t2",
+      "thema": "Modigliani-Miller",
+      "punkte": [
+        "ohne Steuern: Kapitalstruktur irrelevant",
+        "mit Steuern: FK vorteilhaft",
+        "Insolvenzkosten begrenzen"
+      ],
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 22.05.2026",
+        "seite": "MM",
+        "original": "MM ohne/mit Steuern."
+      }
+    },
+    {
+      "id": "t3",
+      "thema": "Insolvenzkosten",
+      "punkte": [
+        "direkt vs. indirekt",
+        "steigen mit Verschuldung",
+        "branchenabhängig"
+      ],
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Oehlrich Kapitel 2 (S. 65)",
+        "seite": "Insolvenzkosten",
+        "original": "direkte und indirekte Kosten."
+      }
+    },
+    {
+      "id": "t4",
+      "thema": "Kennzahlen",
+      "punkte": [
+        "Net Debt / EBITDA",
+        "Marktwert EK & FK",
+        "Steuersatz"
+      ],
+      "relevanz": 2,
+      "quelle": {
+        "doc": "Vorlesung 22.05.2026",
+        "seite": "Kennzahlen",
+        "original": "Verschuldungsgrad-Kennzahlen."
+      }
+    },
+    {
+      "id": "t5",
+      "thema": "Fallbeispiele",
+      "punkte": [
+        "Lufthansa 1,8× / hohe Insolvenzkosten",
+        "Telekom 2,64× / niedrig",
+        "VW ~450 Mrd € / hoch"
+      ],
+      "relevanz": 2,
+      "quelle": {
+        "doc": "Vorlesung 22.05.2026",
+        "seite": "Fälle",
+        "original": "3 Konzerne im Vergleich."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "frage": "Der optimale Verschuldungsgrad liegt laut Trade-off-Theorie dort, wo …",
+      "optionen": [
+        "FK maximal ist",
+        "Tax Shield = Insolvenzkosten-Grenznutzen",
+        "EK maximal ist",
+        "kein FK genutzt wird"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "Grenzabwägung Tax Shield vs. Insolvenzkosten.",
+      "quelle": {
+        "doc": "Oehlrich Kapitel 2 (S. 65)",
+        "seite": "S. 65",
+        "original": "Abwägung an der Grenze."
+      }
+    },
+    {
+      "id": "q2",
+      "frage": "Das Tax Shield entsteht, weil …",
+      "optionen": [
+        "Dividenden absetzbar sind",
+        "FK-Zinsen steuerlich absetzbar sind",
+        "Steuern entfallen",
+        "EK billiger ist"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "Zinsen mindern den zu versteuernden Gewinn.",
+      "quelle": {
+        "doc": "Vorlesung 22.05.2026",
+        "seite": "Tax Shield",
+        "original": "Zinsen absetzbar."
+      }
+    },
+    {
+      "id": "q3",
+      "frage": "MM ohne Steuern besagt …",
+      "optionen": [
+        "max. Verschuldung optimal",
+        "Kapitalstruktur irrelevant",
+        "EK immer besser",
+        "FK immer besser"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "Irrelevanztheorem.",
+      "quelle": {
+        "doc": "Oehlrich Kapitel 2 (S. 65)",
+        "seite": "MM",
+        "original": "Kapitalstruktur irrelevant."
+      }
+    },
+    {
+      "id": "q4",
+      "frage": "Welches Unternehmen kann am ehesten höher verschuldet sein?",
+      "optionen": [
+        "Lufthansa (zyklisch)",
+        "Telekom (stabile Cashflows)",
+        "ein Start-up",
+        "ein Bergbau-Explorer"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "Stabile Cashflows = niedrige Insolvenzkosten.",
+      "quelle": {
+        "doc": "Vorlesung 22.05.2026",
+        "seite": "Telekom",
+        "original": "Telekom, stabile Cashflows."
+      }
+    },
+    {
+      "id": "q5",
+      "frage": "Ein höherer Steuersatz führt zu …",
+      "optionen": [
+        "niedrigerer optimaler Verschuldung",
+        "höherer optimaler Verschuldung",
+        "keinem Effekt",
+        "Insolvenz"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "Tax Shield wertvoller.",
+      "quelle": {
+        "doc": "Oehlrich Kapitel 2 (S. 65)",
+        "seite": "Steuersatz",
+        "original": "wertvolleres Tax Shield."
+      }
+    },
+    {
+      "id": "q6",
+      "frage": "Für die Kapitalstruktur zählen …",
+      "optionen": [
+        "Buchwerte",
+        "Marktwerte von EK und FK",
+        "nur das EK",
+        "nur Umsatz"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "Marktwerte spiegeln Risiko/Wert.",
+      "quelle": {
+        "doc": "Oehlrich Kapitel 2 (S. 65)",
+        "seite": "Marktwert",
+        "original": "Marktwerte EK/FK."
+      }
+    }
+  ],
+  "klausurfragen": [
+    {
+      "id": "f1",
+      "frage": "Erläutern Sie die Trade-off-Theorie der Kapitalstruktur.",
+      "warum": "Kernthema der Präsentation und Vorlesung.",
+      "quelle": {
+        "doc": "Oehlrich Kapitel 2 (S. 65)",
+        "seite": "S. 65",
+        "original": "Trade-off-Theorie."
+      }
+    },
+    {
+      "id": "f2",
+      "frage": "Vergleichen Sie Modigliani-Miller ohne und mit Steuern.",
+      "warum": "Theoretische Grundlage, klausurtypisch.",
+      "quelle": {
+        "doc": "Vorlesung 22.05.2026",
+        "seite": "MM",
+        "original": "MM ohne/mit Steuern."
+      }
+    },
+    {
+      "id": "f3",
+      "frage": "Was sind Insolvenzkosten und wie beeinflussen sie den optimalen Verschuldungsgrad?",
+      "warum": "Zentral für die Abwägung.",
+      "quelle": {
+        "doc": "Oehlrich Kapitel 2 (S. 65)",
+        "seite": "Insolvenzkosten",
+        "original": "Insolvenzkosten."
+      }
+    },
+    {
+      "id": "f4",
+      "frage": "Warum haben Lufthansa, Telekom und VW unterschiedliche optimale Verschuldungsgrade?",
+      "warum": "Anwendung der Theorie auf die 3 Konzerne.",
+      "quelle": {
+        "doc": "Vorlesung 22.05.2026",
+        "seite": "Fälle",
+        "original": "3 Konzerne."
+      }
+    },
+    {
+      "id": "f5",
+      "frage": "Welche Rolle spielt der Steuersatz für die optimale Kapitalstruktur?",
+      "warum": "Tax-Shield-Logik, prüfungsrelevant.",
+      "quelle": {
+        "doc": "Oehlrich Kapitel 2 (S. 65)",
+        "seite": "Steuersatz",
+        "original": "Steuersatz und Tax Shield."
+      }
+    }
+  ]
+}

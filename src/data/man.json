@@ -1,0 +1,403 @@
+{
+  "fach": "man",
+  "titel": "MAN 201 — International Management II (Hattemer)",
+  "stand": "2026-06-04",
+  "dokumente": [
+    {
+      "id": "d_man21",
+      "name": "Vorlesung 21.05.2026",
+      "woerter": 0,
+      "seiten": 1,
+      "hochgeladenVon": "David",
+      "text": "Porter Strategy-Definitionen, Porter's Diamond, Strategic Group Mapping, Bowman's Strategy Clock, VRIO, 9-Field-Matrix."
+    },
+    {
+      "id": "d_man28",
+      "name": "Vorlesung 28.05.2026",
+      "woerter": 0,
+      "seiten": 1,
+      "hochgeladenVon": "David",
+      "text": "Blue Ocean Strategy (Value Innovation, ERRC, Strategy Canvas), CRM (Satisfaction vs Loyalty, CLV), Barista Principle / relational capital, Integration & Collaboration."
+    }
+  ],
+  "karten": [
+    {
+      "id": "k1",
+      "frage": "Was ist die Kernidee der Blue Ocean Strategy?",
+      "antwort": "Value Innovation: gleichzeitig Differenzierung UND niedrige Kosten. Man schafft neuen, unbestrittenen Marktraum (blauer Ozean) und erschließt Nicht-Kunden, statt im überfüllten 'roten Ozean' zu konkurrieren.",
+      "thema": "Blue Ocean",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 28.05.2026",
+        "seite": "Blue Ocean",
+        "original": "Value Innovation — gleichzeitig Differenzierung und niedrige Kosten. The only way to beat the competition is to stop trying to beat the competition."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k2",
+      "frage": "Was sind die vier Aktionen des Four Actions Framework (ERRC)?",
+      "antwort": "Eliminate (eliminieren), Reduce (reduzieren), Raise (erhöhen), Create (schaffen). Damit wird die Value Curve der Branche bewusst gebrochen.",
+      "thema": "Blue Ocean",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 28.05.2026",
+        "seite": "ERRC",
+        "original": "Four Actions Framework: was eliminieren, was reduzieren, was erhöhen, was neu schaffen — Beispiel Yellowtail Wine und Cirque du Soleil."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k3",
+      "frage": "Wozu dient die Strategy Canvas?",
+      "antwort": "Sie zeigt als Value Curve, wie die Branche vs. die eigene Firma über die Wettbewerbsfaktoren abschneidet. Eine stark abweichende (divergierende) Kurve = echter Blue Ocean.",
+      "thema": "Blue Ocean",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 28.05.2026",
+        "seite": "Strategy Canvas",
+        "original": "Zeig die alte Strategy Canvas, wende ERRC an, zeig die neue Canvas — die divergierende Kurve beweist den Blue Ocean."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k4",
+      "frage": "Werden Blue Oceans dauerhaft blau?",
+      "antwort": "Nein. Erfolg lockt Nachahmer → der Ozean wird 'rot' (transient competitive advantage). Wenn die Großen einsteigen (Starbucks→McCafé, Red Bull→Monster), beweist das, dass der Markt groß genug ist.",
+      "thema": "Blue Ocean",
+      "relevanz": 2,
+      "quelle": {
+        "doc": "Vorlesung 28.05.2026",
+        "seite": "rot werden",
+        "original": "Most blue oceans turned red. Wenn die Großen folgen, ist das ein sicheres Zeichen, dass genug Markt da ist."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k5",
+      "frage": "CRM: Sind zufriedene Kunden automatisch loyal?",
+      "antwort": "Nein. Satisfaction ≠ Loyalty. 4 Felder: zufrieden+loyal = Ideal; unzufrieden+loyal = 'Hostage' (nur wegen Wechselbarrieren); zufrieden+nicht loyal = wechselt trotzdem; unzufrieden+nicht loyal = Defector.",
+      "thema": "CRM",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 28.05.2026",
+        "seite": "CRM",
+        "original": "Ein zufriedener Kunde ist nicht automatisch loyal und umgekehrt — Hostage bleibt nur wegen der Wechselbarrieren."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k6",
+      "frage": "Wie berechnet man den Customer Lifetime Value (CLV)?",
+      "antwort": "Jahre × Jahresumsatz − variable Kosten = Lifetime-Bruttogewinn, minus Akquisekosten minus laufendes Marketing. Bsp.: Domino's ~$3.300, Taco Bell ~$11.000, Hilton ~$125.000.",
+      "thema": "CRM",
+      "relevanz": 2,
+      "quelle": {
+        "doc": "Vorlesung 28.05.2026",
+        "seite": "CLV",
+        "original": "Customer Lifetime Value: Jahre mal Jahresumsatz minus variable Kosten minus Akquise — Taco Bell-Kunde ~11.000 Dollar."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k7",
+      "frage": "Was ist der Kern von Porters Strategieverständnis?",
+      "antwort": "Strategy = unique position. Drei Wege: gleiche Aktivitäten anders ausführen · ganz andere Aktivitäten · bewusst entscheiden, was man NICHT tut ('choosing what not to do').",
+      "thema": "Strategy Models",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 21.05.2026",
+        "seite": "Porter",
+        "original": "Porter: Strategy ist eine einzigartige Position — auch: choosing what not to do."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k8",
+      "frage": "Wofür steht VRIO?",
+      "antwort": "Value, Rarity, Imitability, Organization. Test, ob eine Ressource nachhaltigen Wettbewerbsvorteil bringt: wertvoll, selten, schwer imitierbar, organisatorisch nutzbar.",
+      "thema": "Strategy Models",
+      "relevanz": 2,
+      "quelle": {
+        "doc": "Vorlesung 21.05.2026",
+        "seite": "VRIO",
+        "original": "VRIO-Framework: Value, Rarity, Imitability, Organization."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k9",
+      "frage": "Was lehrt Bowman's Strategy Clock (VW Phaeton)?",
+      "antwort": "Y-Achse = wahrgenommener (subjektiver!) Nutzen, X-Achse = Preis. Ein Mismatch (hoher Preis, zu geringer wahrgenommener Wert) ist 'destined to fail' — Beispiel VW Phaeton.",
+      "thema": "Strategy Models",
+      "relevanz": 2,
+      "quelle": {
+        "doc": "Vorlesung 21.05.2026",
+        "seite": "Bowman",
+        "original": "VW Phaeton: Preis hoch, aber der wahrgenommene Wert für das VW-Logo reichte nicht — destined to fail."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k10",
+      "frage": "Integration/Collaboration: vertical forward vs. backward?",
+      "antwort": "Backward = Richtung Lieferanten/Inputs (z.B. eigene Röstung, Fair-Trade-Bauern). Forward = Richtung Kunde/Vertrieb (eigene Stores, Lizenzen). Beispiel Starbucks aus dem Barista Principle.",
+      "thema": "Innovation",
+      "relevanz": 2,
+      "quelle": {
+        "doc": "Vorlesung 28.05.2026",
+        "seite": "Integration",
+        "original": "Starbucks: vertical backward (Röstung, Fair Trade), vertical forward (eigene Stores statt Franchising, Lizenzen B&N/Kraft)."
+      },
+      "up": 0,
+      "down": 0
+    }
+  ],
+  "themen": [
+    {
+      "id": "t1",
+      "thema": "Blue Ocean Strategy",
+      "punkte": [
+        "Value Innovation = Differenzierung + niedrige Kosten",
+        "Strategy Canvas (alt → neu)",
+        "Four Actions: Eliminate/Reduce/Raise/Create",
+        "Urteil: noch blau oder rot geworden?"
+      ],
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 28.05.2026",
+        "seite": "Blue Ocean",
+        "original": "Value Innovation + ERRC + Strategy Canvas + rot/blau-Urteil."
+      }
+    },
+    {
+      "id": "t2",
+      "thema": "CRM",
+      "punkte": [
+        "Satisfaction ≠ Loyalty (4 Felder)",
+        "Relationship- statt Transaktions-View",
+        "Customer Lifetime Value",
+        "Defector vs. Hostage"
+      ],
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 28.05.2026",
+        "seite": "CRM",
+        "original": "Satisfaction ungleich Loyalty; CLV; Relationship-View."
+      }
+    },
+    {
+      "id": "t3",
+      "thema": "Porter & Strategy Models",
+      "punkte": [
+        "3 Strategie-Definitionen",
+        "Porter's Diamond",
+        "VRIO",
+        "9-Field-Matrix (GE/McKinsey)"
+      ],
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 21.05.2026",
+        "seite": "Porter",
+        "original": "Porter-Definitionen, Diamond, VRIO, 9-Field-Matrix."
+      }
+    },
+    {
+      "id": "t4",
+      "thema": "Bowman's Strategy Clock",
+      "punkte": [
+        "Y = wahrgenommener Nutzen (subjektiv)",
+        "X = Preis",
+        "Mismatch = destined to fail",
+        "VW Phaeton"
+      ],
+      "relevanz": 2,
+      "quelle": {
+        "doc": "Vorlesung 21.05.2026",
+        "seite": "Bowman",
+        "original": "Bowman: perceived value vs. price, VW Phaeton als Fail."
+      }
+    },
+    {
+      "id": "t5",
+      "thema": "Strategic Group Map",
+      "punkte": [
+        "Achsen müssen unkorreliert sein",
+        "Bubble-Größe = Umsatz-Marktanteil",
+        "Cluster = strategische Gruppen",
+        "White Space finden"
+      ],
+      "relevanz": 3,
+      "quelle": {
+        "doc": "Vorlesung 21.05.2026",
+        "seite": "Strategic Group Map",
+        "original": "Achsen unkorreliert, Bubble = Marktanteil, Cluster, White Space."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "frage": "Was beschreibt 'Value Innovation'?",
+      "optionen": [
+        "Nur Differenzierung",
+        "Nur Kostenführerschaft",
+        "Differenzierung UND niedrige Kosten zugleich",
+        "Höchster Preis am Markt"
+      ],
+      "loesungIndex": 2,
+      "erklaerung": "Blue Ocean hebt den Trade-off auf: beides gleichzeitig.",
+      "quelle": {
+        "doc": "Vorlesung 28.05.2026",
+        "seite": "Blue Ocean",
+        "original": "Differenzierung und niedrige Kosten zugleich."
+      }
+    },
+    {
+      "id": "q2",
+      "frage": "Wofür steht ERRC?",
+      "optionen": [
+        "Evaluate-Rank-Review-Check",
+        "Eliminate-Reduce-Raise-Create",
+        "Earn-Reduce-Risk-Control",
+        "Explore-Refine-Reach-Convert"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "Four Actions Framework.",
+      "quelle": {
+        "doc": "Vorlesung 28.05.2026",
+        "seite": "ERRC",
+        "original": "Eliminate, Reduce, Raise, Create."
+      }
+    },
+    {
+      "id": "q3",
+      "frage": "Ein loyaler, aber unzufriedener Kunde ist ein …",
+      "optionen": [
+        "Apostel",
+        "Defector",
+        "Hostage",
+        "Söldner"
+      ],
+      "loesungIndex": 2,
+      "erklaerung": "Bleibt nur wegen Wechselbarrieren.",
+      "quelle": {
+        "doc": "Vorlesung 28.05.2026",
+        "seite": "CRM",
+        "original": "Hostage — loyal nur wegen Barrieren."
+      }
+    },
+    {
+      "id": "q4",
+      "frage": "Welche Achsen hat Bowman's Strategy Clock?",
+      "optionen": [
+        "Preis & Menge",
+        "Wahrgenommener Nutzen & Preis",
+        "Qualität & Marktanteil",
+        "Kosten & Differenzierung"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "Perceived value vs. price.",
+      "quelle": {
+        "doc": "Vorlesung 21.05.2026",
+        "seite": "Bowman",
+        "original": "Wahrgenommener Nutzen und Preis."
+      }
+    },
+    {
+      "id": "q5",
+      "frage": "Bubble-Größe in der Strategic Group Map = ?",
+      "optionen": [
+        "Mitarbeiterzahl",
+        "Umsatz-Marktanteil",
+        "Anzahl Produkte",
+        "Gewinnmarge"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "Hattemers Standard.",
+      "quelle": {
+        "doc": "Vorlesung 21.05.2026",
+        "seite": "Strategic Group Map",
+        "original": "Bubble-Größe = market share in revenue."
+      }
+    },
+    {
+      "id": "q6",
+      "frage": "Eigene Stores statt Franchising bei Starbucks ist …",
+      "optionen": [
+        "vertical backward",
+        "vertical forward",
+        "horizontal",
+        "diversified"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "Forward = Richtung Kunde/Vertrieb.",
+      "quelle": {
+        "doc": "Vorlesung 28.05.2026",
+        "seite": "Integration",
+        "original": "Eigene Stores = vertical forward."
+      }
+    }
+  ],
+  "klausurfragen": [
+    {
+      "id": "f1",
+      "frage": "Erklären Sie Value Innovation und wenden Sie das Four Actions Framework auf ein Beispiel an.",
+      "warum": "Kernthema Blue Ocean, ausführlich behandelt (Yellowtail, Cirque du Soleil).",
+      "quelle": {
+        "doc": "Vorlesung 28.05.2026",
+        "seite": "Blue Ocean",
+        "original": "Value Innovation + ERRC am Beispiel."
+      }
+    },
+    {
+      "id": "f2",
+      "frage": "Warum sind zufriedene Kunden nicht automatisch loyal? (CRM)",
+      "warum": "CRM-Kernaussage, mit 4-Felder-Matrix betont.",
+      "quelle": {
+        "doc": "Vorlesung 28.05.2026",
+        "seite": "CRM",
+        "original": "Satisfaction ungleich Loyalty."
+      }
+    },
+    {
+      "id": "f3",
+      "frage": "Skizzieren Sie eine Strategic Group Map und begründen Sie die Achsenwahl.",
+      "warum": "Assignment-1-Thema; Achsen unkorreliert, Bubble = Marktanteil.",
+      "quelle": {
+        "doc": "Vorlesung 21.05.2026",
+        "seite": "Strategic Group Map",
+        "original": "Achsen unkorreliert, Bubble = Marktanteil."
+      }
+    },
+    {
+      "id": "f4",
+      "frage": "Erläutern Sie Bowman's Strategy Clock am Beispiel des VW Phaeton.",
+      "warum": "Klassischer Fail-Case, im Unterricht betont.",
+      "quelle": {
+        "doc": "Vorlesung 21.05.2026",
+        "seite": "Bowman",
+        "original": "VW Phaeton, Mismatch Preis/Wert."
+      }
+    },
+    {
+      "id": "f5",
+      "frage": "Grenzen Sie vertikale, horizontale und diversifizierte Integration ab (Beispiel Starbucks).",
+      "warum": "Barista-Principle-Aufgabe, Prof-Brille backward/forward/horizontal/diversified.",
+      "quelle": {
+        "doc": "Vorlesung 28.05.2026",
+        "seite": "Integration",
+        "original": "vertical backward/forward, horizontal, diversified."
+      }
+    }
+  ]
+}

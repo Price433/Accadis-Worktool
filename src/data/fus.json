@@ -1,0 +1,294 @@
+{
+  "fach": "fus",
+  "titel": "FUS 202 — Future Skills II · Planspiel (Ratz)",
+  "stand": "2026-06-04",
+  "dokumente": [
+    {
+      "id": "d_fus",
+      "name": "Kickoff 26.05.2026 + Fallstudie",
+      "woerter": 0,
+      "seiten": 1,
+      "hochgeladenVon": "David",
+      "text": "Circular Energy Storage Planspiel: Startup gründen, Second-Life-Batteriemodule 5 kWh + IoT-Box + EnergyOS, Twin Transformation, Bewertung 30% Sim / 70% Reflexionspaper, BMC 12.06, Reflexionspaper 31.07."
+    }
+  ],
+  "karten": [
+    {
+      "id": "k1",
+      "frage": "Was ist die Aufgabe im FUS-202-Planspiel?",
+      "antwort": "Ein fiktives Startup (ab 2027) gründen und über 4 Quartale steuern. Kernprodukt: Second-Life-Batteriemodule (5 kWh) + IoT-Steuerbox + Cloud-Plattform 'EnergyOS' (Heimspeicher / Circular Energy Storage).",
+      "thema": "Fallstudie",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "FUS 202 Kickoff & Fallstudie",
+        "seite": "Fallstudie",
+        "original": "Sie gründen ein modulares Hausspeicher-Startup. Kernprodukt: Second-Life-Batteriemodule à 5 kWh sowie IoT-Steuerbox; Cloud-Plattform EnergyOS."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k2",
+      "frage": "Wie wird FUS 202 bewertet?",
+      "antwort": "30 % Simulation (Finanz-KPIs + Circularity-Score + SaaS-Ratio) + 70 % Reflexionspapier (inkl. Bewertung des Business Model Canvas). Keine Präsentation.",
+      "thema": "Bewertung",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "FUS 202 Kickoff & Fallstudie",
+        "seite": "Bewertung",
+        "original": "30 % Simulation, 70 % Reflexionspapier inkl. Bewertung des Business Model Canvas."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k3",
+      "frage": "Was bedeutet 'Twin Transformation'?",
+      "antwort": "Nachhaltigkeit UND Digitalisierung als gleichwertige Werttreiber verstehen (CO2-Footprint + SaaS-Einnahmen). Eines der 5 Lernziele.",
+      "thema": "Lernziele",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "FUS 202 Kickoff & Fallstudie",
+        "seite": "Twin Transformation",
+        "original": "Twin Transformation: Nachhaltigkeit und Digitalisierung als gleichwertige Werttreiber (CO2-Footprint, SaaS-Einnahmen)."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k4",
+      "frage": "Welche 3 Zielsegmente nennt die Fallstudie?",
+      "antwort": "Stadtwerke · Early Adopter · Sophisticated User. Ein Segment priorisieren (oder Kombination mit scharfem USP).",
+      "thema": "Marktumfeld",
+      "relevanz": 2,
+      "quelle": {
+        "doc": "FUS 202 Kickoff & Fallstudie",
+        "seite": "Segmente",
+        "original": "3 Segmente: Stadtwerke, Early Adopter, Sophisticated User — priorisieren."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k5",
+      "frage": "Welche 4 Entscheidungsbereiche gibt es pro Quartal?",
+      "antwort": "1) Produktion & Supply Chain, 2) Marketing & Vertrieb, 3) Forschung/Entwicklung/Innovation, 4) Finanz- & Kapitalstruktur.",
+      "thema": "Simulation",
+      "relevanz": 2,
+      "quelle": {
+        "doc": "FUS 202 Kickoff & Fallstudie",
+        "seite": "Entscheidungen",
+        "original": "4 Entscheidungsbereiche: Produktion, Marketing, F&E, Finanz-/Kapitalstruktur."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k6",
+      "frage": "Worauf zahlt die interne Sim-Bewertung ein?",
+      "antwort": "~40 % Finanz-KPIs · 30 % Circularity-Score (CO2/ESG) · 30 % SaaS-Ratio (wiederkehrender Software-Umsatz).",
+      "thema": "Bewertung",
+      "relevanz": 2,
+      "quelle": {
+        "doc": "FUS 202 Kickoff & Fallstudie",
+        "seite": "Sim-Gewichtung",
+        "original": "Interne Gewichtung: 40 % Finanz, 30 % Circularity, 30 % SaaS."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k7",
+      "frage": "Was muss im Business Model Canvas erkennbar sein?",
+      "antwort": "Der USP muss klar im BMC stehen, orientiert an 3 Wirkungsebenen (ökologisch, ökonomisch, digital) und der Produktarchitektur. Abgabe Meilenstein 1.",
+      "thema": "BMC",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "FUS 202 Kickoff & Fallstudie",
+        "seite": "BMC",
+        "original": "Der USP sollte klar im Business Model Canvas erkennbar sein; orientiert an drei Wirkungsebenen."
+      },
+      "up": 0,
+      "down": 0
+    },
+    {
+      "id": "k8",
+      "frage": "Anforderungen an das Reflexionspapier?",
+      "antwort": "2.500–3.000 Wörter, über Turnitin, inkl. Business Model Canvas + Dashboard-Bewertung; ehrliche Selbstreflexion wird belohnt.",
+      "thema": "Abgabe",
+      "relevanz": 3,
+      "quelle": {
+        "doc": "FUS 202 Kickoff & Fallstudie",
+        "seite": "Reflexionspaper",
+        "original": "Reflexionspapier 2.500–3.000 Wörter über Turnitin, inkl. Bewertung des BMC."
+      },
+      "up": 0,
+      "down": 0
+    }
+  ],
+  "themen": [
+    {
+      "id": "t1",
+      "thema": "Fallstudie Circular Energy Storage",
+      "punkte": [
+        "Startup ab 2027",
+        "Second-Life-Module 5 kWh + IoT + EnergyOS",
+        "Heimspeicher-Markt",
+        "Twin Transformation"
+      ],
+      "relevanz": 3,
+      "quelle": {
+        "doc": "FUS 202 Kickoff & Fallstudie",
+        "seite": "Fallstudie",
+        "original": "Circular Energy Storage Startup."
+      }
+    },
+    {
+      "id": "t2",
+      "thema": "Bewertung",
+      "punkte": [
+        "30 % Sim / 70 % Reflexionspaper",
+        "Sim: 40 % Finanz / 30 % Circularity / 30 % SaaS",
+        "keine Präsentation"
+      ],
+      "relevanz": 3,
+      "quelle": {
+        "doc": "FUS 202 Kickoff & Fallstudie",
+        "seite": "Bewertung",
+        "original": "Bewertungslogik."
+      }
+    },
+    {
+      "id": "t3",
+      "thema": "Business Model Canvas",
+      "punkte": [
+        "USP klar erkennbar",
+        "3 Wirkungsebenen (öko/ökonomisch/digital)",
+        "Abgabe Meilenstein 1 (12.06.)"
+      ],
+      "relevanz": 3,
+      "quelle": {
+        "doc": "FUS 202 Kickoff & Fallstudie",
+        "seite": "BMC",
+        "original": "BMC-Anforderungen."
+      }
+    },
+    {
+      "id": "t4",
+      "thema": "Simulation",
+      "punkte": [
+        "4 Entscheidungsbereiche/Quartal",
+        "3 Zielsegmente",
+        "Ranking pro Markt"
+      ],
+      "relevanz": 2,
+      "quelle": {
+        "doc": "FUS 202 Kickoff & Fallstudie",
+        "seite": "Simulation",
+        "original": "Sim-Mechanik."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "frage": "Das Kernprodukt im Planspiel ist …",
+      "optionen": [
+        "Solarmodule",
+        "Second-Life-Batteriemodule (5 kWh) + IoT + EnergyOS",
+        "Windturbinen",
+        "E-Auto-Ladesäulen"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "Heimspeicher aus Second-Life-Akkus.",
+      "quelle": {
+        "doc": "FUS 202 Kickoff & Fallstudie",
+        "seite": "Fallstudie",
+        "original": "Second-Life-Module + IoT + EnergyOS."
+      }
+    },
+    {
+      "id": "q2",
+      "frage": "Bewertung FUS 202:",
+      "optionen": [
+        "100 % Klausur",
+        "30 % Sim / 70 % Reflexionspaper",
+        "50/50 Präsentation",
+        "nur Sim"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "Keine Präsentation.",
+      "quelle": {
+        "doc": "FUS 202 Kickoff & Fallstudie",
+        "seite": "Bewertung",
+        "original": "30/70."
+      }
+    },
+    {
+      "id": "q3",
+      "frage": "'Twin Transformation' meint …",
+      "optionen": [
+        "zwei Standorte",
+        "Nachhaltigkeit + Digitalisierung gleichwertig",
+        "zwei Produkte",
+        "Doppelschicht"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "CO2 + SaaS.",
+      "quelle": {
+        "doc": "FUS 202 Kickoff & Fallstudie",
+        "seite": "Twin Transformation",
+        "original": "Nachhaltigkeit + Digitalisierung."
+      }
+    },
+    {
+      "id": "q4",
+      "frage": "Wie lang ist das Reflexionspapier?",
+      "optionen": [
+        "1.000 W",
+        "2.500–3.000 W",
+        "5.000 W",
+        "beliebig"
+      ],
+      "loesungIndex": 1,
+      "erklaerung": "über Turnitin.",
+      "quelle": {
+        "doc": "FUS 202 Kickoff & Fallstudie",
+        "seite": "Reflexionspaper",
+        "original": "2.500–3.000 Wörter."
+      }
+    }
+  ],
+  "klausurfragen": [
+    {
+      "id": "f1",
+      "frage": "Erläutern Sie die Twin Transformation am Beispiel eures Startups.",
+      "warum": "Zentrales Lernziel, fürs Reflexionspapier.",
+      "quelle": {
+        "doc": "FUS 202 Kickoff & Fallstudie",
+        "seite": "Twin Transformation",
+        "original": "Twin Transformation."
+      }
+    },
+    {
+      "id": "f2",
+      "frage": "Begründen Sie eure Zielsegment-Wahl und den USP im BMC.",
+      "warum": "Kern der BMC-Abgabe.",
+      "quelle": {
+        "doc": "FUS 202 Kickoff & Fallstudie",
+        "seite": "BMC",
+        "original": "Segment + USP."
+      }
+    },
+    {
+      "id": "f3",
+      "frage": "Wie hängen Circularity-Score und SaaS-Ratio mit der Bewertung zusammen?",
+      "warum": "Bewertungslogik, fürs Paper.",
+      "quelle": {
+        "doc": "FUS 202 Kickoff & Fallstudie",
+        "seite": "Bewertung",
+        "original": "Scoring-Logik."
+      }
+    }
+  ]
+}

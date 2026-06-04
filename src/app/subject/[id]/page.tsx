@@ -8,6 +8,7 @@ import {
   Quote, ChevronDown, Layers, AlignLeft, ListChecks, Sparkles, Check, Brain, Play, CalendarClock,
 } from "lucide-react";
 import Tilt from "@/components/Tilt";
+import TopNav from "@/components/TopNav";
 import Lernmodus from "@/components/Lernmodus";
 import { STRATEGIE, lernplan } from "@/lib/lernen";
 import termine from "@/data/termine.json";
@@ -73,14 +74,12 @@ export default function SubjectPage() {
 
   return (
     <>
-      <header className="material-bar sticky top-0 z-20">
-        <div className="mx-auto flex max-w-3xl items-center gap-2 px-6 py-3.5">
-          <Link href="/" className="btn-plain inline-flex items-center text-[0.95rem]"><ChevronLeft size={18} /> Fächer</Link>
-          <span className="t-headline truncate">{set.titel}</span>
-        </div>
-      </header>
+      <TopNav />
 
       <main className="mx-auto max-w-3xl px-6 pb-28 pt-8">
+        <Link href="/" className="btn-plain mb-2 inline-flex items-center text-[0.9rem]"><ChevronLeft size={16} /> Übersicht</Link>
+        <h1 className="t-title mb-5">{set.titel}</h1>
+
         {/* Quellen / Upload */}
         <Tilt max={4}>
           <section className="card card-pad">

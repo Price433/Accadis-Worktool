@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Radar, ArrowUpRight, BookOpen, ScanLine, CalendarClock } from "lucide-react";
 import Tilt from "@/components/Tilt";
 import Timeline from "@/components/Timeline";
+import TopNav from "@/components/TopNav";
 
 const Hero3D = dynamic(() => import("@/components/Hero3D"), { ssr: false });
 
@@ -60,12 +61,7 @@ export default function Home() {
 
   return (
     <>
-      <header className="material-bar sticky top-0 z-20">
-        <div className="mx-auto flex max-w-5xl items-center gap-2 px-6 py-3.5">
-          <Radar size={18} color="var(--accent)" />
-          <span className="t-headline">Klausur-Radar</span>
-        </div>
-      </header>
+      <TopNav />
 
       {/* 3D-Hero */}
       <section className="relative mx-auto max-w-5xl px-6">

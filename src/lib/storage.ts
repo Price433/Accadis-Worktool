@@ -6,11 +6,12 @@ import type { StudySet } from "./types";
 // Lokal (Dev): JSON-Dateien unter .data/   ·   Vercel später: @vercel/blob (1 Funktion tauschen).
 // Seeds liegen schreibgeschützt unter src/data/ und werden beim ersten Zugriff nach .data/ kopiert.
 
-const DATA_DIR = path.join(process.cwd(), ".data");
+// Auf Vercel ist nur /tmp beschreibbar (ephemer); lokal nutzen wir .data/
+const DATA_DIR = process.env.VERCEL ? "/tmp/kr-data" : path.join(process.cwd(), ".data");
 const SEED_DIR = path.join(process.cwd(), "src", "data");
 
 async function ensureDir() {
-  await fs.mkdir(DATA_DIR, { recursive: true });
+  try { await fs.mkdir(DATA_DIR, { recursive: true }); } catch { /* read-only: ignorieren */ }
 }
 
 function file(fach: string) {

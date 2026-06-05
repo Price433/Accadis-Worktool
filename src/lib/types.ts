@@ -4,6 +4,7 @@ export type Quelle = {
   doc: string;        // Name der Original-Mitschrift / des Dokuments
   seite?: string;     // Seite / Abschnitt, z.B. "S. 12" oder "Übung 3"
   original?: string;  // VERBATIM-Ausschnitt aus der Originaldatei (zum Nachvollziehen/Lernen)
+  bild?: string;      // URL eines Screenshots der relevanten Original-Folie (im Blob-Store)
 };
 
 export type Karte = {

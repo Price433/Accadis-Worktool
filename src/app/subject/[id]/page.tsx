@@ -4,8 +4,8 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  ChevronLeft, FileText, Upload, RefreshCw, ThumbsUp, ThumbsDown, Pencil, Trash2,
-  Quote, ChevronDown, Layers, AlignLeft, ListChecks, Sparkles, Check, Brain, Play, CalendarClock, Plus,
+  ChevronLeft, FileText, ThumbsUp, ThumbsDown, Quote, ChevronDown,
+  Layers, AlignLeft, ListChecks, Sparkles, Brain, Play, CalendarClock, Check, Image as ImageIcon,
 } from "lucide-react";
 import Tilt from "@/components/Tilt";
 import TopNav from "@/components/TopNav";
@@ -29,51 +29,17 @@ export default function SubjectPage() {
   const fach = decodeURIComponent(useParams().id as string);
   const [set, setSet] = useState<StudySet | null>(null);
   const [tab, setTab] = useState<Tab>("karten");
-  const [busy, setBusy] = useState("");
-  const [von, setVon] = useState("");
   const [lernen, setLernen] = useState(false);
-  const [ki, setKi] = useState(false);
-  const [neu, setNeu] = useState<null | { frage: string; antwort: string; thema: string; relevanz: 1 | 2 | 3; doc: string; original: string }>(null);
 
   async function load() {
     const r = await fetch(`/api/studyset?fach=${encodeURIComponent(fach)}`);
     if (r.ok) setSet(await r.json());
   }
-  useEffect(() => {
-    load();
-    fetch("/api/config").then((r) => r.json()).then((j) => setKi(!!j.ki)).catch(() => {});
-  }, [fach]);
-
-  function karteSpeichern() {
-    if (!set || !neu || !neu.frage.trim()) return;
-    const k = {
-      id: "k_" + Date.now().toString(36), frage: neu.frage.trim(), antwort: neu.antwort.trim(),
-      thema: neu.thema.trim() || "Eigene Karte", relevanz: neu.relevanz, up: 0, down: 0,
-      quelle: { doc: neu.doc.trim() || "Eigene Eingabe", original: neu.original.trim() || undefined },
-    };
-    speichern({ ...set, karten: [k, ...set.karten] });
-    setNeu(null);
-  }
+  useEffect(() => { load(); }, [fach]);
 
   async function speichern(next: StudySet) {
     setSet({ ...next });
     await fetch("/api/studyset", { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify(next) });
-  }
-  async function upload(e: React.ChangeEvent<HTMLInputElement>) {
-    const f = e.target.files?.[0]; if (!f) return;
-    setBusy("Lese PDF …");
-    const fd = new FormData(); fd.append("fach", fach); fd.append("von", von || "anonym"); fd.append("datei", f);
-    const r = await fetch("/api/ingest", { method: "POST", body: fd });
-    const j = await r.json();
-    setBusy(r.ok ? `${j.dokument.name} (${j.dokument.seiten} S.) hinzugefügt — jetzt neu generieren.` : `Fehler: ${j.error}`);
-    e.target.value = ""; load();
-  }
-  async function generieren() {
-    setBusy("KI wertet die Mitschriften aus … (~30 s)");
-    const r = await fetch("/api/generate", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ fach }) });
-    const j = await r.json();
-    setBusy(r.ok ? "Aktualisiert." : `Fehler: ${j.error}`);
-    load();
   }
 
   if (!set) return <div className="flex min-h-screen items-center justify-center t-caption">Lädt …</div>;
@@ -95,33 +61,6 @@ export default function SubjectPage() {
       <main className="mx-auto max-w-3xl px-6 pb-28 pt-8">
         <Link href="/" className="btn-plain mb-2 inline-flex items-center text-[0.9rem]"><ChevronLeft size={16} /> Übersicht</Link>
         <h1 className="t-title mb-5">{set.titel}</h1>
-
-        {/* Quellen / Upload — nur wenn KI verfügbar (sonst manuell) */}
-        {(ki || set.dokumente.length > 0) && (
-          <Tilt max={4}>
-            <section className="card card-pad">
-              <div className="t-eyebrow mb-2.5">Original-Mitschriften</div>
-              <div className="flex flex-wrap gap-2">
-                {set.dokumente.map((d) => (
-                  <span key={d.id} className="chip" title={`${d.woerter} Wörter · ${d.hochgeladenVon}`}>
-                    <FileText size={13} color="var(--accent)" /> {d.name} <span className="t-caption">· {d.seiten} S.</span>
-                  </span>
-                ))}
-                {!set.dokumente.length && <span className="t-caption">noch keine</span>}
-              </div>
-              {ki && (
-                <div className="mt-4 flex flex-wrap items-center gap-2.5">
-                  <input value={von} onChange={(e) => setVon(e.target.value)} placeholder="dein Name" className="field" style={{ width: "auto", flex: "0 1 9rem" }} />
-                  <label className="btn btn-primary btn-sm cursor-pointer"><Upload size={15} /> Mitschrift (PDF)
-                    <input type="file" accept="application/pdf" className="hidden" onChange={upload} />
-                  </label>
-                  <button onClick={generieren} className="btn btn-secondary btn-sm"><RefreshCw size={15} /> Neu generieren</button>
-                  {busy && <span className="t-caption">{busy}</span>}
-                </div>
-              )}
-            </section>
-          </Tilt>
-        )}
 
         {/* Strategie & Plan */}
         <Tilt max={3}>
@@ -160,44 +99,10 @@ export default function SubjectPage() {
         </nav>
 
         <div className="mt-6 space-y-4">
-          {/* Manuell Karte hinzufügen */}
-          {tab === "karten" && (
-            neu ? (
-              <div className="card card-pad" style={{ borderColor: "color-mix(in srgb, var(--accent) 30%, transparent)" }}>
-                <div className="t-eyebrow mb-2.5" style={{ color: "var(--accent-ink)" }}>Neue Karteikarte</div>
-                <div className="space-y-2">
-                  <input className="field" placeholder="Frage *" value={neu.frage} onChange={(e) => setNeu({ ...neu, frage: e.target.value })} autoFocus />
-                  <textarea className="field" placeholder="Antwort" rows={3} value={neu.antwort} onChange={(e) => setNeu({ ...neu, antwort: e.target.value })} />
-                  <div className="flex flex-wrap gap-2">
-                    <input className="field" style={{ flex: "1 1 9rem" }} placeholder="Thema" value={neu.thema} onChange={(e) => setNeu({ ...neu, thema: e.target.value })} />
-                    <select className="field" style={{ flex: "0 1 12rem" }} value={neu.relevanz} onChange={(e) => setNeu({ ...neu, relevanz: Number(e.target.value) as 1 | 2 | 3 })}>
-                      <option value={3}>klausurrelevant</option>
-                      <option value={2}>wichtig</option>
-                      <option value={1}>Hintergrund</option>
-                    </select>
-                  </div>
-                  <input className="field" placeholder="Quelle (z. B. Mitschrift 03.06. · S. 12)" value={neu.doc} onChange={(e) => setNeu({ ...neu, doc: e.target.value })} />
-                  <textarea className="field" placeholder="Original-Auszug aus der Mitschrift (optional, wörtlich)" rows={2} value={neu.original} onChange={(e) => setNeu({ ...neu, original: e.target.value })} />
-                </div>
-                <div className="mt-3 flex gap-2">
-                  <button onClick={karteSpeichern} className="btn btn-primary btn-sm"><Check size={15} /> Karte speichern</button>
-                  <button onClick={() => setNeu(null)} className="btn btn-secondary btn-sm">Abbrechen</button>
-                </div>
-              </div>
-            ) : (
-              <button onClick={() => setNeu({ frage: "", antwort: "", thema: "", relevanz: 3, doc: "", original: "" })}
-                className="card card-pad tile-hover flex w-full items-center justify-center gap-2"
-                style={{ borderStyle: "dashed", color: "var(--accent)", fontWeight: 600 }}>
-                <Plus size={18} /> Karteikarte hinzufügen
-              </button>
-            )
-          )}
           {tab === "karten" && set.karten.map((k, i) => (
             <Anim key={k.id} i={i}><Tilt max={5}>
               <KarteCard k={k}
-                onVote={(d) => { const c = [...set.karten]; c[i] = { ...k, [d]: k[d] + 1 }; speichern({ ...set, karten: c }); }}
-                onSave={(nf, na) => { const c = [...set.karten]; c[i] = { ...k, frage: nf, antwort: na }; speichern({ ...set, karten: c }); }}
-                onDel={() => speichern({ ...set, karten: set.karten.filter((x) => x.id !== k.id) })} />
+                onVote={(d) => { const c = [...set.karten]; c[i] = { ...k, [d]: k[d] + 1 }; speichern({ ...set, karten: c }); }} />
             </Tilt></Anim>
           ))}
           {tab === "themen" && set.themen.map((t, i) => <Anim key={t.id} i={i}><Tilt max={5}><ThemaCard t={t} /></Tilt></Anim>)}
@@ -226,51 +131,43 @@ function Rel({ r }: { r: 1 | 2 | 3 }) {
 }
 function QuelleTag({ q }: { q: Quelle }) {
   const [open, setOpen] = useState(false);
+  const hat = q.original || q.bild;
   return (
     <div className="w-full">
       <div className="flex flex-wrap items-center gap-2.5">
         <span className="t-caption inline-flex items-center gap-1"><FileText size={12} /> {q.doc}{q.seite ? ` · ${q.seite}` : ""}</span>
-        {q.original && (
+        {hat && (
           <button className="src-toggle inline-flex items-center gap-1" onClick={() => setOpen(!open)}>
-            <Quote size={12} /> {open ? "Original ausblenden" : "Original anzeigen"}
+            {q.bild ? <ImageIcon size={12} /> : <Quote size={12} />} {open ? "Original ausblenden" : "Original-Folie anzeigen"}
             <ChevronDown size={12} style={{ transform: open ? "rotate(180deg)" : "none", transition: "transform .2s" }} />
           </button>
         )}
       </div>
-      {open && q.original && (
-        <blockquote className="src-quote">
-          {q.original}
-          <span className="src-meta inline-flex items-center gap-1"><Quote size={11} /> Originalauszug · {q.doc}{q.seite ? ` · ${q.seite}` : ""}</span>
-        </blockquote>
+      {open && hat && (
+        <div className="src-quote">
+          {q.bild && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={q.bild} alt="Original-Folie" className="mb-2 w-full rounded-lg"
+              style={{ border: "1px solid var(--line)" }} />
+          )}
+          {q.original && <div>{q.original}</div>}
+          <span className="src-meta inline-flex items-center gap-1"><Quote size={11} /> Original · {q.doc}{q.seite ? ` · ${q.seite}` : ""}</span>
+        </div>
       )}
     </div>
   );
 }
 
-function KarteCard({ k, onVote, onSave, onDel }: { k: Karte; onVote: (d: "up" | "down") => void; onSave: (f: string, a: string) => void; onDel: () => void }) {
-  const [edit, setEdit] = useState(false);
-  const [f, setF] = useState(k.frage); const [a, setA] = useState(k.antwort);
+function KarteCard({ k, onVote }: { k: Karte; onVote: (d: "up" | "down") => void }) {
   return (
     <div className="card card-pad">
       <div className="pop mb-2 flex items-center gap-2"><Rel r={k.relevanz} /><span className="t-caption">{k.thema}</span></div>
-      {edit ? (
-        <div className="space-y-2">
-          <textarea value={f} onChange={(e) => setF(e.target.value)} className="field" rows={2} />
-          <textarea value={a} onChange={(e) => setA(e.target.value)} className="field" rows={3} />
-          <button onClick={() => { onSave(f, a); setEdit(false); }} className="btn btn-primary btn-sm"><Check size={15} /> Speichern</button>
-        </div>
-      ) : (
-        <>
-          <p className="t-headline pop">{k.frage}</p>
-          <p className="t-body t-secondary mt-1.5">{k.antwort}</p>
-        </>
-      )}
+      <p className="t-headline pop">{k.frage}</p>
+      <p className="t-body t-secondary mt-1.5">{k.antwort}</p>
       <div className="mt-3.5 border-t pt-3 hair-line" style={{ borderTopWidth: "1px" }}>
-        <div className="flex items-center gap-1 text-[0.85rem]">
-          <button onClick={() => onVote("up")} className="btn-plain inline-flex items-center gap-1" style={{ color: "var(--green)" }}><ThumbsUp size={14} /> {k.up}</button>
-          <button onClick={() => onVote("down")} className="btn-plain inline-flex items-center gap-1" style={{ color: "var(--ink-3)" }}><ThumbsDown size={14} /> {k.down}</button>
-          <button onClick={() => setEdit(!edit)} className="btn-plain ml-auto inline-flex items-center gap-1" title="Bearbeiten"><Pencil size={13} /> Bearbeiten</button>
-          <button onClick={onDel} className="btn-plain inline-flex items-center gap-1" style={{ color: "var(--ink-3)" }} title="Löschen"><Trash2 size={13} /></button>
+        <div className="flex items-center gap-2 text-[0.85rem]">
+          <button onClick={() => onVote("up")} className="btn-plain inline-flex items-center gap-1" style={{ color: "var(--green)" }} title="hilfreich"><ThumbsUp size={14} /> {k.up}</button>
+          <button onClick={() => onVote("down")} className="btn-plain inline-flex items-center gap-1" style={{ color: "var(--ink-3)" }} title="unklar"><ThumbsDown size={14} /> {k.down}</button>
         </div>
         <div className="mt-2.5"><QuelleTag q={k.quelle} /></div>
       </div>

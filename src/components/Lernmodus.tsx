@@ -76,15 +76,20 @@ export default function Lernmodus({ fach, karten, onClose }: { fach: string; kar
         ) : (
           <>
             <p className="t-body mt-4">{k.antwort}</p>
-            {k.quelle.original && (
+            {(k.quelle.original || k.quelle.bild) && (
               <div className="mt-3">
                 <button className="src-toggle inline-flex items-center gap-1" onClick={() => setZeigeQuelle((s) => !s)}>
-                  <Quote size={12} /> {zeigeQuelle ? "Original ausblenden" : "Original anzeigen"}
+                  <Quote size={12} /> {zeigeQuelle ? "Original ausblenden" : "Original-Folie anzeigen"}
                 </button>
                 {zeigeQuelle && (
-                  <blockquote className="src-quote">{k.quelle.original}
+                  <div className="src-quote">
+                    {k.quelle.bild && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={k.quelle.bild} alt="Original-Folie" className="mb-2 w-full rounded-lg" style={{ border: "1px solid var(--line)" }} />
+                    )}
+                    {k.quelle.original && <div>{k.quelle.original}</div>}
                     <span className="src-meta">{k.quelle.doc}{k.quelle.seite ? ` · ${k.quelle.seite}` : ""}</span>
-                  </blockquote>
+                  </div>
                 )}
               </div>
             )}

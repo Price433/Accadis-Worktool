@@ -20,18 +20,18 @@ async function seedIds(): Promise<string[]> {
   try { return (await fs.readdir(SEED_DIR)).filter((f) => f.endsWith(".json")).map((f) => f.replace(/\.json$/, "")); } catch { return []; }
 }
 
-export async function listFaecher(): Promise<{ fach: string; titel: string }[]> {
+export async function listFaecher(): Promise<{ fach: string; titel: string; anzahl: number }[]> {
   const ids = new Set<string>(await seedIds());
   if (USE_BLOB) {
     try { for (const b of (await list({ prefix: "studysets/" })).blobs) ids.add(b.pathname.replace(/^studysets\//, "").replace(/\.json$/, "")); } catch {}
   } else {
     try { await fs.mkdir(DATA_DIR, { recursive: true }); for (const f of await fs.readdir(DATA_DIR)) if (f.endsWith(".json")) ids.add(f.replace(/\.json$/, "")); } catch {}
   }
-  const out: { fach: string; titel: string }[] = [];
+  const out: { fach: string; titel: string; anzahl: number }[] = [];
   for (const id of ids) {
     if (id === "termine") continue;
     const s = await loadSet(id);
-    if (s && s.titel && Array.isArray(s.karten)) out.push({ fach: id, titel: s.titel });
+    if (s && s.titel && Array.isArray(s.karten)) out.push({ fach: id, titel: s.titel, anzahl: s.karten.length });
   }
   return out.sort((a, b) => a.fach.localeCompare(b.fach));
 }

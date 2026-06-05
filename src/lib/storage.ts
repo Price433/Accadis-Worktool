@@ -1,6 +1,6 @@
 import { promises as fs } from "fs";
 import path from "path";
-import { put, list } from "@vercel/blob";
+import { put, list, head } from "@vercel/blob";
 import type { StudySet } from "./types";
 
 // Persistenz:
@@ -38,13 +38,10 @@ export async function listFaecher(): Promise<{ fach: string; titel: string; anza
 
 export async function loadSet(fach: string): Promise<StudySet | null> {
   if (USE_BLOB) {
-    try {
-      const found = (await list({ prefix: blobPath(fach), limit: 1 })).blobs[0];
-      if (found) {
-        const r = await fetch(found.url, { cache: "no-store" });
-        if (r.ok) return (await r.json()) as StudySet;
-      }
-    } catch {}
+    let url: string | null = null;
+    try { url = (await head(blobPath(fach))).url; } catch {}               // strong consistency
+    if (!url) { try { url = (await list({ prefix: blobPath(fach), limit: 1 })).blobs[0]?.url ?? null; } catch {} }
+    if (url) { try { const r = await fetch(url, { cache: "no-store" }); if (r.ok) return (await r.json()) as StudySet; } catch {} }
     return readSeed(fach);
   }
   try { return JSON.parse(await fs.readFile(path.join(DATA_DIR, `${fach}.json`), "utf8")) as StudySet; } catch {}

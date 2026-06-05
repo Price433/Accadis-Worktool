@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   ChevronLeft, FileText, Upload, RefreshCw, ThumbsUp, ThumbsDown, Pencil, Trash2,
-  Quote, ChevronDown, Layers, AlignLeft, ListChecks, Sparkles, Check, Brain, Play, CalendarClock,
+  Quote, ChevronDown, Layers, AlignLeft, ListChecks, Sparkles, Check, Brain, Play, CalendarClock, Plus,
 } from "lucide-react";
 import Tilt from "@/components/Tilt";
 import TopNav from "@/components/TopNav";
@@ -32,12 +32,28 @@ export default function SubjectPage() {
   const [busy, setBusy] = useState("");
   const [von, setVon] = useState("");
   const [lernen, setLernen] = useState(false);
+  const [ki, setKi] = useState(false);
+  const [neu, setNeu] = useState<null | { frage: string; antwort: string; thema: string; relevanz: 1 | 2 | 3; doc: string; original: string }>(null);
 
   async function load() {
     const r = await fetch(`/api/studyset?fach=${encodeURIComponent(fach)}`);
     if (r.ok) setSet(await r.json());
   }
-  useEffect(() => { load(); }, [fach]);
+  useEffect(() => {
+    load();
+    fetch("/api/config").then((r) => r.json()).then((j) => setKi(!!j.ki)).catch(() => {});
+  }, [fach]);
+
+  function karteSpeichern() {
+    if (!set || !neu || !neu.frage.trim()) return;
+    const k = {
+      id: "k_" + Date.now().toString(36), frage: neu.frage.trim(), antwort: neu.antwort.trim(),
+      thema: neu.thema.trim() || "Eigene Karte", relevanz: neu.relevanz, up: 0, down: 0,
+      quelle: { doc: neu.doc.trim() || "Eigene Eingabe", original: neu.original.trim() || undefined },
+    };
+    speichern({ ...set, karten: [k, ...set.karten] });
+    setNeu(null);
+  }
 
   async function speichern(next: StudySet) {
     setSet({ ...next });
@@ -80,28 +96,32 @@ export default function SubjectPage() {
         <Link href="/" className="btn-plain mb-2 inline-flex items-center text-[0.9rem]"><ChevronLeft size={16} /> Übersicht</Link>
         <h1 className="t-title mb-5">{set.titel}</h1>
 
-        {/* Quellen / Upload */}
-        <Tilt max={4}>
-          <section className="card card-pad">
-            <div className="t-eyebrow mb-2.5">Original-Mitschriften</div>
-            <div className="flex flex-wrap gap-2">
-              {set.dokumente.map((d) => (
-                <span key={d.id} className="chip" title={`${d.woerter} Wörter · ${d.hochgeladenVon}`}>
-                  <FileText size={13} color="var(--accent)" /> {d.name} <span className="t-caption">· {d.seiten} S.</span>
-                </span>
-              ))}
-              {!set.dokumente.length && <span className="t-caption">noch keine</span>}
-            </div>
-            <div className="mt-4 flex flex-wrap items-center gap-2.5">
-              <input value={von} onChange={(e) => setVon(e.target.value)} placeholder="dein Name" className="field" style={{ width: "auto", flex: "0 1 9rem" }} />
-              <label className="btn btn-primary btn-sm cursor-pointer"><Upload size={15} /> Mitschrift (PDF)
-                <input type="file" accept="application/pdf" className="hidden" onChange={upload} />
-              </label>
-              <button onClick={generieren} className="btn btn-secondary btn-sm"><RefreshCw size={15} /> Neu generieren</button>
-              {busy && <span className="t-caption">{busy}</span>}
-            </div>
-          </section>
-        </Tilt>
+        {/* Quellen / Upload — nur wenn KI verfügbar (sonst manuell) */}
+        {(ki || set.dokumente.length > 0) && (
+          <Tilt max={4}>
+            <section className="card card-pad">
+              <div className="t-eyebrow mb-2.5">Original-Mitschriften</div>
+              <div className="flex flex-wrap gap-2">
+                {set.dokumente.map((d) => (
+                  <span key={d.id} className="chip" title={`${d.woerter} Wörter · ${d.hochgeladenVon}`}>
+                    <FileText size={13} color="var(--accent)" /> {d.name} <span className="t-caption">· {d.seiten} S.</span>
+                  </span>
+                ))}
+                {!set.dokumente.length && <span className="t-caption">noch keine</span>}
+              </div>
+              {ki && (
+                <div className="mt-4 flex flex-wrap items-center gap-2.5">
+                  <input value={von} onChange={(e) => setVon(e.target.value)} placeholder="dein Name" className="field" style={{ width: "auto", flex: "0 1 9rem" }} />
+                  <label className="btn btn-primary btn-sm cursor-pointer"><Upload size={15} /> Mitschrift (PDF)
+                    <input type="file" accept="application/pdf" className="hidden" onChange={upload} />
+                  </label>
+                  <button onClick={generieren} className="btn btn-secondary btn-sm"><RefreshCw size={15} /> Neu generieren</button>
+                  {busy && <span className="t-caption">{busy}</span>}
+                </div>
+              )}
+            </section>
+          </Tilt>
+        )}
 
         {/* Strategie & Plan */}
         <Tilt max={3}>
@@ -140,6 +160,38 @@ export default function SubjectPage() {
         </nav>
 
         <div className="mt-6 space-y-4">
+          {/* Manuell Karte hinzufügen */}
+          {tab === "karten" && (
+            neu ? (
+              <div className="card card-pad" style={{ borderColor: "color-mix(in srgb, var(--accent) 30%, transparent)" }}>
+                <div className="t-eyebrow mb-2.5" style={{ color: "var(--accent-ink)" }}>Neue Karteikarte</div>
+                <div className="space-y-2">
+                  <input className="field" placeholder="Frage *" value={neu.frage} onChange={(e) => setNeu({ ...neu, frage: e.target.value })} autoFocus />
+                  <textarea className="field" placeholder="Antwort" rows={3} value={neu.antwort} onChange={(e) => setNeu({ ...neu, antwort: e.target.value })} />
+                  <div className="flex flex-wrap gap-2">
+                    <input className="field" style={{ flex: "1 1 9rem" }} placeholder="Thema" value={neu.thema} onChange={(e) => setNeu({ ...neu, thema: e.target.value })} />
+                    <select className="field" style={{ flex: "0 1 12rem" }} value={neu.relevanz} onChange={(e) => setNeu({ ...neu, relevanz: Number(e.target.value) as 1 | 2 | 3 })}>
+                      <option value={3}>klausurrelevant</option>
+                      <option value={2}>wichtig</option>
+                      <option value={1}>Hintergrund</option>
+                    </select>
+                  </div>
+                  <input className="field" placeholder="Quelle (z. B. Mitschrift 03.06. · S. 12)" value={neu.doc} onChange={(e) => setNeu({ ...neu, doc: e.target.value })} />
+                  <textarea className="field" placeholder="Original-Auszug aus der Mitschrift (optional, wörtlich)" rows={2} value={neu.original} onChange={(e) => setNeu({ ...neu, original: e.target.value })} />
+                </div>
+                <div className="mt-3 flex gap-2">
+                  <button onClick={karteSpeichern} className="btn btn-primary btn-sm"><Check size={15} /> Karte speichern</button>
+                  <button onClick={() => setNeu(null)} className="btn btn-secondary btn-sm">Abbrechen</button>
+                </div>
+              </div>
+            ) : (
+              <button onClick={() => setNeu({ frage: "", antwort: "", thema: "", relevanz: 3, doc: "", original: "" })}
+                className="card card-pad tile-hover flex w-full items-center justify-center gap-2"
+                style={{ borderStyle: "dashed", color: "var(--accent)", fontWeight: 600 }}>
+                <Plus size={18} /> Karteikarte hinzufügen
+              </button>
+            )
+          )}
           {tab === "karten" && set.karten.map((k, i) => (
             <Anim key={k.id} i={i}><Tilt max={5}>
               <KarteCard k={k}
